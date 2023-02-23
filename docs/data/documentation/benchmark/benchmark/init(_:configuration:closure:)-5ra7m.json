@@ -1,0 +1,568 @@
+{
+  "abstract" : [
+    {
+      "text" : "Definition of a Benchmark",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/init(_:configuration:closure:)-5ra7m"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:9BenchmarkAAC_13configuration7closureABSgSS_AB13ConfigurationVyABctcfc",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "init"
+      },
+      {
+        "kind" : "text",
+        "text" : "?("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:SS",
+        "text" : "String"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "configuration"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9BenchmarkAAC",
+        "text" : "Benchmark"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9BenchmarkAAC13ConfigurationV",
+        "text" : "Configuration"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "closure"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9BenchmarkAAC",
+        "text" : "Benchmark"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9BenchmarkAAC0A7Closurea",
+        "text" : "BenchmarkClosure"
+      },
+      {
+        "kind" : "text",
+        "text" : ")"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Benchmark"
+      }
+    ],
+    "remoteSource" : {
+      "fileName" : "Benchmark.swift",
+      "url" : "https:\/\/github.com\/ordo-one\/package-benchmark\/blob\/main\/Sources\/Benchmark\/Benchmark.swift#L123"
+    },
+    "role" : "symbol",
+    "roleHeading" : "Initializer",
+    "symbolKind" : "init",
+    "title" : "init(_:configuration:closure:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "@discardableResult"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "init"
+            },
+            {
+              "kind" : "text",
+              "text" : "?("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "_"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "name"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:SS",
+              "text" : "String"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "configuration"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9BenchmarkAAC",
+              "text" : "Benchmark"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9BenchmarkAAC13ConfigurationV",
+              "text" : "Configuration"
+            },
+            {
+              "kind" : "text",
+              "text" : " = Benchmark.defaultConfiguration, "
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "closure"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "@escaping"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9BenchmarkAAC",
+              "text" : "Benchmark"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9BenchmarkAAC0A7Closurea",
+              "text" : "BenchmarkClosure"
+            },
+            {
+              "kind" : "text",
+              "text" : ")"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The name used for display purposes of the benchmark (also used for",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "matching when comparing to baselines)",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "name"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Defines the settings that should be used for this benchmark",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "configuration"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The actual benchmark closure that will be measured",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "closure"
+        }
+      ]
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/init(_:configuration:closure:)-699lk"
+      ],
+      "title" : "Creating Benchmarks"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/benchmark\/benchmark\/init(_:configuration:closure:)-5ra7m"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Defines a benchmark",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Benchmark"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Benchmark"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct": {
+  "abstract" : [
+    {
+      "text" : "The configuration settings for running a benchmark.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Configuration"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Configuration"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Benchmark.Configuration",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/init(_:configuration:closure:)-5ra7m": {
+  "abstract" : [
+    {
+      "text" : "Definition of a Benchmark",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "?("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "configuration"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9BenchmarkAAC",
+      "text" : "Benchmark"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9BenchmarkAAC13ConfigurationV",
+      "text" : "Configuration"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "closure"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9BenchmarkAAC",
+      "text" : "Benchmark"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9BenchmarkAAC0A7Closurea",
+      "text" : "BenchmarkClosure"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/init(_:configuration:closure:)-5ra7m",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(_:configuration:closure:)",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/init(_:configuration:closure:)-5ra7m"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/init(_:configuration:closure:)-699lk": {
+  "abstract" : [
+    {
+      "text" : "Definition of a Benchmark",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "?("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "configuration"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9BenchmarkAAC",
+      "text" : "Benchmark"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9BenchmarkAAC13ConfigurationV",
+      "text" : "Configuration"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "closure"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9BenchmarkAAC",
+      "text" : "Benchmark"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9BenchmarkAAC0A12AsyncClosurea",
+      "text" : "BenchmarkAsyncClosure"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/init(_:configuration:closure:)-699lk",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(_:configuration:closure:)",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/init(_:configuration:closure:)-699lk"
+}
+}
+}

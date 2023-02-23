@@ -1,0 +1,207 @@
+{
+  "abstract" : [
+    {
+      "text" : "The entry point for defining benchmarks, expected to be overridden by benchmarks you write.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/registerBenchmarks()"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:9Benchmark18registerBenchmarksyyF",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "registerBenchmarks"
+      },
+      {
+        "kind" : "text",
+        "text" : "()"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Benchmark"
+      }
+    ],
+    "remoteSource" : {
+      "fileName" : "BenchmarkInternals.swift",
+      "url" : "https:\/\/github.com\/ordo-one\/package-benchmark\/blob\/main\/Sources\/Benchmark\/BenchmarkInternals.swift#L25"
+    },
+    "role" : "symbol",
+    "roleHeading" : "Function",
+    "symbolKind" : "func",
+    "title" : "registerBenchmarks()"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "dynamic"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "func"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "registerBenchmarks"
+            },
+            {
+              "kind" : "text",
+              "text" : "()"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Annotate a function that returns your benchmarks with ",
+              "type" : "text"
+            },
+            {
+              "code" : "@_dynamicReplacement(for: registerBenchmarks)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to override this function. The following code shows a minimal benchmark structure.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "@_dynamicReplacement(for: registerBenchmarks)",
+            "func benchmarks() {",
+            "    Benchmark(\"Minimal benchmark\") { benchmark in",
+            "    }",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/benchmark\/registerbenchmarks()"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/registerBenchmarks()": {
+  "abstract" : [
+    {
+      "text" : "The entry point for defining benchmarks, expected to be overridden by benchmarks you write.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "registerBenchmarks"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/registerBenchmarks()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "registerBenchmarks()",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/registerbenchmarks()"
+}
+}
+}

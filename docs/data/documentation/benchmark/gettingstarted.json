@@ -1,0 +1,664 @@
+{
+  "abstract" : [
+    {
+      "text" : "Before creating your own benchmarks, you must install the required prerequisites and add a dependency on Benchmark to your package.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/GettingStarted"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "Benchmark"
+      }
+    ],
+    "role" : "article",
+    "roleHeading" : "Article",
+    "title" : "Getting Started"
+  },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "Overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "There are three steps that needs to be performed to get up and running with your own benchmarks:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Install prerequisite dependencies if needed (currently only ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "jemalloc",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ")",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Add a dependency on Benchmark to your ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "Package.swift",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " file",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Add one or more benchmark executable targets to the top level ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "Benchmarks\/",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " directory for auto discovery",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "After having done those, running your benchmarks are as simple as running ",
+              "type" : "text"
+            },
+            {
+              "code" : "swift package benchmark",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Installing-Prerequisites-and-Platform-Support",
+          "level" : 3,
+          "text" : "Installing Prerequisites and Platform Support",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Benchmark requires Swift 5.7 support as it uses Regex and Duration types introduced with the ",
+              "type" : "text"
+            },
+            {
+              "code" : "macOS 13",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " runtime, most versions of Linux will work as long as Swift 5.7+ is used.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Benchmark also depends and needs the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "https:\/\/jemalloc.net",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " memory allocation library, which is used by the Benchmark infrastructure to capture memory allocation statistics, as ",
+              "type" : "text"
+            },
+            {
+              "code" : "jemalloc",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " provides a rich programmatic API for extracting memory allocation statistics at runtime.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The Benchmark package requires you to install jemalloc on any machine used for benchmarking.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If you want to avoid adding the ",
+              "type" : "text"
+            },
+            {
+              "code" : "jemalloc",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " dependency to your project, the recommended approach is to embed a separate Swift project in a subdirectory that uses your project, then the dependency on ",
+              "type" : "text"
+            },
+            {
+              "code" : "jemalloc",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " is contained to that subproject only.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Installing-jemalloc-on-macOS",
+          "level" : 4,
+          "text" : "Installing `jemalloc` on macOS",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "brew install jemalloc"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Installing-jemalloc-on-Ubuntu",
+          "level" : 4,
+          "text" : "Installing `jemalloc` on Ubuntu",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "sudo apt-get install -y libjemalloc-dev"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Installing-jemalloc-on-Amazon-Linux-2",
+          "level" : 4,
+          "text" : "Installing `jemalloc` on Amazon Linux 2",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For Amazon Linux 2 users have reported that the following works:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Docker file configuration",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "RUN sudo yum -y install bzip2 make",
+            "RUN curl https:\/\/github.com\/jemalloc\/jemalloc\/releases\/download\/5.3.0\/jemalloc-5.3.0.tar.bz2 -L -o jemalloc-5.3.0.tar.bz2",
+            "RUN tar -xf jemalloc-5.3.0.tar.bz2",
+            "RUN cd jemalloc-5.3.0 && .\/configure && make && sudo make install"
+          ],
+          "syntax" : "dockerfile",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "code" : "make install",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " installs the libraries in ",
+              "type" : "text"
+            },
+            {
+              "code" : "\/usr\/local\/lib",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", which the plugin can’t find, so you also have to do:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "$ sudo ldconfig \/usr\/local\/lib"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Alternatively:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "echo \/usr\/local\/lib > \/etc\/ld.so.conf.d\/local_lib.conf && ldconfig"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Adding-dependencies",
+          "level" : 3,
+          "text" : "Adding dependencies",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "To add the dependency on Benchmark, add a dependency to your package:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            ".package(url: \"https:\/\/github.com\/ordo-one\/package-benchmark\", .upToNextMajor(from: \"1.0.0\")),"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Add-benchmark-exectuable-targets",
+          "level" : 3,
+          "text" : "Add benchmark exectuable targets",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Create an executable target in ",
+              "type" : "text"
+            },
+            {
+              "code" : "Package.swift",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " for each benchmark suite you want to measure.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The source for all benchmarks ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "must reside in a directory named ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "Benchmarks",
+                  "type" : "codeVoice"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " in the root of your swift package.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The benchmark plugin uses this directory combined with the executable target information to automatically discover and run your benchmarks.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For each executable target, include a dependency on ",
+              "type" : "text"
+            },
+            {
+              "code" : "BenchmarkSupport",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " from ",
+              "type" : "text"
+            },
+            {
+              "code" : "package-benchmark",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The following example shows an benchmark suite named ",
+              "type" : "text"
+            },
+            {
+              "code" : "My-Benchmark",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " with the required dependency on ",
+              "type" : "text"
+            },
+            {
+              "code" : "BenchmarkSupport",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and the source files for the benchmark that reside in the directory ",
+              "type" : "text"
+            },
+            {
+              "code" : "Benchmarks\/My-Benchmark",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ":",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            ".executableTarget(",
+            "    name: \"My-Benchmark\",",
+            "    dependencies: [",
+            "        .product(name: \"BenchmarkSupport\", package: \"package-benchmark\"),",
+            "    ],",
+            "    path: \"Benchmarks\/My-Benchmark\"",
+            "),"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Dedicated-GitHub-runner-instances",
+          "level" : 3,
+          "text" : "Dedicated GitHub runner instances",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For reproducible and good comparable results, it is ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "highly",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " recommended to set up a private GitHub runner that is completely dedicated for performance benchmark runs, as the standard GitHub CI runners are deployed on a shared infrastructure the deviations between runs can be significant and difficult to assess.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Sample-Project",
+          "level" : 3,
+          "text" : "Sample Project",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "There’s a ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "https:\/\/github.com\/ordo-one\/package-benchmark-samples",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " showing usage of the basic API which can be a good starting point if you want to look at how a project can be setup.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/WritingBenchmarks",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Metrics",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/RunningBenchmarks",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Workflows"
+      ],
+      "title" : "Essentials"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/benchmark\/gettingstarted"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Metrics": {
+  "abstract" : [
+    {
+      "text" : "Benchmarks supports a wide range of benchmark metrics and also allows you to create custom benchmark metrics.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Metrics",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Metrics and Thresholds",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/metrics"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/RunningBenchmarks": {
+  "abstract" : [
+    {
+      "text" : "Use the SwiftPM package plugin ",
+      "type" : "text"
+    },
+    {
+      "code" : "benchmark",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " to run your benchmarks",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/RunningBenchmarks",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Running Benchmarks",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/runningbenchmarks"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Workflows": {
+  "abstract" : [
+    {
+      "text" : "Benchmark supports local workflow patterns as well as CI integration to enforce benchmark performance.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Workflows",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Workflows",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/workflows"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/WritingBenchmarks": {
+  "abstract" : [
+    {
+      "text" : "Create benchmark suites to run and measure your benchmarks.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/WritingBenchmarks",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Writing Benchmarks",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/writingbenchmarks"
+},
+"https://github.com/ordo-one/package-benchmark-samples": {
+  "identifier" : "https:\/\/github.com\/ordo-one\/package-benchmark-samples",
+  "title" : "sample project",
+  "titleInlineContent" : [
+    {
+      "text" : "sample project",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/github.com\/ordo-one\/package-benchmark-samples"
+},
+"https://jemalloc.net": {
+  "identifier" : "https:\/\/jemalloc.net",
+  "title" : "jemalloc",
+  "titleInlineContent" : [
+    {
+      "text" : "jemalloc",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/jemalloc.net"
+}
+}
+}

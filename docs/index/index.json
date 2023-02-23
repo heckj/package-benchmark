@@ -1,0 +1,929 @@
+{
+  "interfaceLanguages" : {
+    "swift" : [
+      {
+        "children" : [
+          {
+            "title" : "Essentials",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/benchmark\/gettingstarted",
+            "title" : "Getting Started",
+            "type" : "article"
+          },
+          {
+            "path" : "\/documentation\/benchmark\/writingbenchmarks",
+            "title" : "Writing Benchmarks",
+            "type" : "article"
+          },
+          {
+            "path" : "\/documentation\/benchmark\/metrics",
+            "title" : "Metrics and Thresholds",
+            "type" : "article"
+          },
+          {
+            "path" : "\/documentation\/benchmark\/runningbenchmarks",
+            "title" : "Running Benchmarks",
+            "type" : "article"
+          },
+          {
+            "path" : "\/documentation\/benchmark\/workflows",
+            "title" : "Workflows",
+            "type" : "article"
+          },
+          {
+            "title" : "Benchmarks",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Creating Benchmarks",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/init(_:configuration:closure:)-5ra7m",
+                "title" : "init?(String, configuration: Benchmark.Configuration, closure: Benchmark.BenchmarkClosure)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/init(_:configuration:closure:)-699lk",
+                "title" : "init?(String, configuration: Benchmark.Configuration, closure: Benchmark.BenchmarkAsyncClosure)",
+                "type" : "init"
+              },
+              {
+                "title" : "Configuring Benchmarks",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.property",
+                "title" : "var configuration: Benchmark.Configuration",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/defaultconfiguration",
+                "title" : "static var defaultConfiguration: Benchmark.Configuration",
+                "type" : "property"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Creating Configurations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/init(metrics:timeunits:warmupiterations:scalingfactor:maxduration:maxiterations:skip:thresholds:)",
+                    "title" : "init(metrics: [BenchmarkMetric], timeUnits: BenchmarkTimeUnits, warmupIterations: Int, scalingFactor: BenchmarkScalingFactor, maxDuration: Duration, maxIterations: Int, skip: Bool, thresholds: [BenchmarkMetric : BenchmarkResult.PercentileThresholds]?)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Inspecting Configurations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/maxduration",
+                    "title" : "var maxDuration: Duration",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/maxiterations",
+                    "title" : "var maxIterations: Int",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/metrics",
+                    "title" : "var metrics: [BenchmarkMetric]",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/skip",
+                    "title" : "var skip: Bool",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/thresholds",
+                    "title" : "var thresholds: [BenchmarkMetric : BenchmarkResult.PercentileThresholds]?",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/scalingfactor",
+                    "title" : "var scalingFactor: BenchmarkScalingFactor",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/timeunits",
+                    "title" : "var timeUnits: BenchmarkTimeUnits",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/warmupiterations",
+                    "title" : "var warmupIterations: Int",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Decoding Configurations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/init(from:)",
+                    "title" : "init(from: Decoder) throws",
+                    "type" : "init"
+                  }
+                ],
+                "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct",
+                "title" : "Benchmark.Configuration",
+                "type" : "struct"
+              },
+              {
+                "title" : "Writing Benchmarks",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/scalediterations",
+                "title" : "var scaledIterations: Range<Int>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/startmeasurement()",
+                "title" : "func startMeasurement()",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/stopmeasurement()",
+                "title" : "func stopMeasurement()",
+                "type" : "method"
+              },
+              {
+                "title" : "Inspecting Benchmarks",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/name",
+                "title" : "var name: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/currentiteration",
+                "title" : "var currentIteration: Int",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/error(_:)",
+                "title" : "func error(String)",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/failurereason",
+                "title" : "var failureReason: String?",
+                "type" : "property"
+              },
+              {
+                "title" : "Collecting Custom Metrics",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/measurement(_:_:)",
+                "title" : "func measurement(BenchmarkMetric, Int)",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/custommetricmeasurement",
+                "title" : "var customMetricMeasurement: Benchmark.BenchmarkCustomMetricMeasurement?",
+                "type" : "property"
+              },
+              {
+                "title" : "Decoding Benchmarks",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/init(from:)",
+                "title" : "init(from: Decoder) throws",
+                "type" : "init"
+              },
+              {
+                "title" : "Comparing Benchmarks",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/!=(_:_:)",
+                "title" : "static func != (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmark\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/benchmark\/benchmark\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/benchmark\/benchmark",
+            "title" : "Benchmark",
+            "type" : "class"
+          },
+          {
+            "title" : "Configuring Benchmarks",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Creating Configurations",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/init(metrics:timeunits:warmupiterations:scalingfactor:maxduration:maxiterations:skip:thresholds:)",
+                "title" : "init(metrics: [BenchmarkMetric], timeUnits: BenchmarkTimeUnits, warmupIterations: Int, scalingFactor: BenchmarkScalingFactor, maxDuration: Duration, maxIterations: Int, skip: Bool, thresholds: [BenchmarkMetric : BenchmarkResult.PercentileThresholds]?)",
+                "type" : "init"
+              },
+              {
+                "title" : "Inspecting Configurations",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/maxduration",
+                "title" : "var maxDuration: Duration",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/maxiterations",
+                "title" : "var maxIterations: Int",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/metrics",
+                "title" : "var metrics: [BenchmarkMetric]",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/skip",
+                "title" : "var skip: Bool",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/thresholds",
+                "title" : "var thresholds: [BenchmarkMetric : BenchmarkResult.PercentileThresholds]?",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/scalingfactor",
+                "title" : "var scalingFactor: BenchmarkScalingFactor",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/timeunits",
+                "title" : "var timeUnits: BenchmarkTimeUnits",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/warmupiterations",
+                "title" : "var warmupIterations: Int",
+                "type" : "property"
+              },
+              {
+                "title" : "Decoding Configurations",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/init(from:)",
+                "title" : "init(from: Decoder) throws",
+                "type" : "init"
+              }
+            ],
+            "path" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct",
+            "title" : "Benchmark.Configuration",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Metric Collections",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/default",
+                "title" : "static var `default`: [BenchmarkMetric]",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/system",
+                "title" : "static var system: [BenchmarkMetric]",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/extended",
+                "title" : "static var extended: [BenchmarkMetric]",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/memory",
+                "title" : "static var memory: [BenchmarkMetric]",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/disk",
+                "title" : "static var disk: [BenchmarkMetric]",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/all",
+                "title" : "static var all: [BenchmarkMetric]",
+                "type" : "property"
+              },
+              {
+                "title" : "System Metrics",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/wallclock",
+                "title" : "case wallClock",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/syscalls",
+                "title" : "case syscalls",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/contextswitches",
+                "title" : "case contextSwitches",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/threads",
+                "title" : "case threads",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/threadsrunning",
+                "title" : "case threadsRunning",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/cpusystem",
+                "title" : "case cpuSystem",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/cpuuser",
+                "title" : "case cpuUser",
+                "type" : "case"
+              },
+              {
+                "title" : "Extended System Metrics",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/wallclock",
+                "title" : "case wallClock",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/cputotal",
+                "title" : "case cpuTotal",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/malloccounttotal",
+                "title" : "case mallocCountTotal",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/throughput",
+                "title" : "case throughput",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/peakmemoryresident",
+                "title" : "case peakMemoryResident",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/memoryleaked",
+                "title" : "case memoryLeaked",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/allocatedresidentmemory",
+                "title" : "case allocatedResidentMemory",
+                "type" : "case"
+              },
+              {
+                "title" : "Memory Metrics",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/peakmemoryresident",
+                "title" : "case peakMemoryResident",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/peakmemoryvirtual",
+                "title" : "case peakMemoryVirtual",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/malloccountsmall",
+                "title" : "case mallocCountSmall",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/malloccountlarge",
+                "title" : "case mallocCountLarge",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/malloccounttotal",
+                "title" : "case mallocCountTotal",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/memoryleaked",
+                "title" : "case memoryLeaked",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/allocatedresidentmemory",
+                "title" : "case allocatedResidentMemory",
+                "type" : "case"
+              },
+              {
+                "title" : "Disk Metrics",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/readsyscalls",
+                "title" : "case readSyscalls",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/writesyscalls",
+                "title" : "case writeSyscalls",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/readbyteslogical",
+                "title" : "case readBytesLogical",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/writebyteslogical",
+                "title" : "case writeBytesLogical",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/readbytesphysical",
+                "title" : "case readBytesPhysical",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/writebytesphysical",
+                "title" : "case writeBytesPhysical",
+                "type" : "case"
+              },
+              {
+                "title" : "Custom Metrics",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/custom(_:polarity:usescalingfactor:)",
+                "title" : "case custom(String, polarity: BenchmarkMetric.Polarity, useScalingFactor: Bool)",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/polarity-swift.property",
+                "title" : "var polarity: BenchmarkMetric.Polarity",
+                "type" : "property"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Enumeration Cases",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmarkmetric\/polarity-swift.enum\/preferslarger",
+                    "title" : "case prefersLarger",
+                    "type" : "case"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmarkmetric\/polarity-swift.enum\/preferssmaller",
+                    "title" : "case prefersSmaller",
+                    "type" : "case"
+                  },
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmarkmetric\/polarity-swift.enum\/init(from:)",
+                    "title" : "init(from: Decoder) throws",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/benchmark\/benchmarkmetric\/polarity-swift.enum\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/benchmark\/benchmarkmetric\/polarity-swift.enum\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/polarity-swift.enum",
+                "title" : "BenchmarkMetric.Polarity",
+                "type" : "enum"
+              },
+              {
+                "title" : "Inspecting Metrics",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/description",
+                "title" : "var description: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/countable",
+                "title" : "var countable: Bool",
+                "type" : "property"
+              },
+              {
+                "title" : "Decoding a Metric",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/init(from:)",
+                "title" : "init(from: Decoder) throws",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/usescalingfactor",
+                "title" : "var useScalingFactor: Bool",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmarkmetric\/description",
+                    "title" : "var description: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/customstringconvertible-implementations",
+                "title" : "CustomStringConvertible Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmarkmetric\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/benchmark\/benchmarkmetric\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/benchmark\/benchmarkmetric",
+            "title" : "BenchmarkMetric",
+            "type" : "enum"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Creating Time Units",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarktimeunits\/automatic",
+                "title" : "case automatic",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarktimeunits\/seconds",
+                "title" : "case seconds",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarktimeunits\/milliseconds",
+                "title" : "case milliseconds",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarktimeunits\/microseconds",
+                "title" : "case microseconds",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarktimeunits\/nanoseconds",
+                "title" : "case nanoseconds",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarktimeunits\/init(_:)",
+                "title" : "init(Statistics.Units)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarktimeunits\/init(rawvalue:)",
+                "title" : "init?(rawValue: Int)",
+                "type" : "init"
+              },
+              {
+                "title" : "Describing Time Units",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarktimeunits\/description",
+                "title" : "var description: String",
+                "type" : "property"
+              },
+              {
+                "title" : "Encoding and Decoding Time Units",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarktimeunits\/encode(to:)",
+                "title" : "func encode(to: Encoder) throws",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarktimeunits\/init(from:)",
+                "title" : "init(from: Decoder) throws",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarktimeunits\/divisor",
+                "title" : "var divisor: Int",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmarktimeunits\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/benchmark\/benchmarktimeunits\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmarktimeunits\/init(from:)",
+                    "title" : "init(from: Decoder) throws",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmarktimeunits\/hashvalue",
+                    "title" : "var hashValue: Int",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmarktimeunits\/encode(to:)",
+                    "title" : "func encode(to: Encoder) throws",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmarktimeunits\/hash(into:)",
+                    "title" : "func hash(into: inout Hasher)",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/benchmark\/benchmarktimeunits\/rawrepresentable-implementations",
+                "title" : "RawRepresentable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/benchmark\/benchmarktimeunits",
+            "title" : "BenchmarkTimeUnits",
+            "type" : "enum"
+          },
+          {
+            "title" : "Registering Benchmarks",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/benchmark\/registerbenchmarks()",
+            "title" : "func registerBenchmarks()",
+            "type" : "func"
+          },
+          {
+            "title" : "Supporting Functions",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/benchmark\/blackhole(_:)",
+            "title" : "func blackHole(some Any)",
+            "type" : "func"
+          },
+          {
+            "title" : "Enumerations",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Enumeration Cases",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/giga",
+                "title" : "case giga",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/kilo",
+                "title" : "case kilo",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/mega",
+                "title" : "case mega",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/one",
+                "title" : "case one",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/peta",
+                "title" : "case peta",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/tera",
+                "title" : "case tera",
+                "type" : "case"
+              },
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/init(_:)",
+                "title" : "init(BenchmarkTimeUnits)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/init(rawvalue:)",
+                "title" : "init?(rawValue: Int)",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/description",
+                "title" : "var description: String",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/init(from:)",
+                    "title" : "init(from: Decoder) throws",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/hashvalue",
+                    "title" : "var hashValue: Int",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/encode(to:)",
+                    "title" : "func encode(to: Encoder) throws",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/hash(into:)",
+                    "title" : "func hash(into: inout Hasher)",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/rawrepresentable-implementations",
+                "title" : "RawRepresentable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/benchmark\/benchmarkscalingfactor",
+            "title" : "BenchmarkScalingFactor",
+            "type" : "enum"
+          }
+        ],
+        "path" : "\/documentation\/benchmark",
+        "title" : "Benchmark",
+        "type" : "module"
+      }
+    ]
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 1
+  }
+}

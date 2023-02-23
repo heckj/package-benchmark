@@ -1,0 +1,638 @@
+{
+  "abstract" : [
+    {
+      "text" : "Override the automatic detection of timeunits for metrics related to time to a specific",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "one (auto should work for most use cases)",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct"
+      ],
+      [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/timeUnits"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:9BenchmarkAAC13ConfigurationV9timeUnitsAA0a4TimeD0Ovp",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "var"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "timeUnits"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9Benchmark0A9TimeUnitsO",
+        "text" : "BenchmarkTimeUnits"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Benchmark"
+      }
+    ],
+    "remoteSource" : {
+      "fileName" : "Benchmark.swift",
+      "url" : "https:\/\/github.com\/ordo-one\/package-benchmark\/blob\/main\/Sources\/Benchmark\/Benchmark.swift#L268"
+    },
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "timeUnits"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "var"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "timeUnits"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9Benchmark0A9TimeUnitsO",
+              "text" : "BenchmarkTimeUnits"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/maxDuration",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/maxIterations",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/metrics",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/skip",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/thresholds",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/scalingFactor",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/warmupIterations"
+      ],
+      "title" : "Inspecting Configurations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/timeunits"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Defines a benchmark",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Benchmark"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Benchmark"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct": {
+  "abstract" : [
+    {
+      "text" : "The configuration settings for running a benchmark.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Configuration"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Configuration"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Benchmark.Configuration",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct/maxDuration": {
+  "abstract" : [
+    {
+      "text" : "The maximum wall clock runtime for the benchmark, currenty defaults to ",
+      "type" : "text"
+    },
+    {
+      "code" : ".seconds(1)",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " if not set",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "maxDuration"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s8DurationV",
+      "text" : "Duration"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/maxDuration",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "maxDuration",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/maxduration"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct/maxIterations": {
+  "abstract" : [
+    {
+      "text" : "The maximum number of iterations for the benchmark., currently defaults to 10K iterations if not set",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "maxIterations"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/maxIterations",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "maxIterations",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/maxiterations"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct/metrics": {
+  "abstract" : [
+    {
+      "text" : "Defines the metrics that should be measured for the benchmark",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "metrics"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+      "text" : "BenchmarkMetric"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/metrics",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "metrics",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/metrics"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct/scalingFactor": {
+  "abstract" : [
+    {
+      "text" : "Specifies the number of logical subiterations being done, supporting scaling of metricsi accordingly.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "E.g. ",
+      "type" : "text"
+    },
+    {
+      "code" : ".kilo",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : "will scale results with 1000. Any subiteration done in the benchmark should use",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "code" : "for _ in benchmark.scaledIterations",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " for the number of iterations.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "scalingFactor"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A13ScalingFactorO",
+      "text" : "BenchmarkScalingFactor"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/scalingFactor",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "scalingFactor",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/scalingfactor"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct/skip": {
+  "abstract" : [
+    {
+      "text" : "Whether to skip this test (convenience for not having to comment out tests that have issues)",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "skip"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/skip",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "skip",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/skip"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct/thresholds": {
+  "abstract" : [
+    {
+      "text" : "Customized CI failure thresholds for a given metric for the Benchmark",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "thresholds"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+      "text" : "BenchmarkMetric"
+    },
+    {
+      "kind" : "text",
+      "text" : " : "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "BenchmarkResult"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "PercentileThresholds"
+    },
+    {
+      "kind" : "text",
+      "text" : "]?"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/thresholds",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "thresholds",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/thresholds"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct/timeUnits": {
+  "abstract" : [
+    {
+      "text" : "Override the automatic detection of timeunits for metrics related to time to a specific",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "one (auto should work for most use cases)",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "timeUnits"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A9TimeUnitsO",
+      "text" : "BenchmarkTimeUnits"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/timeUnits",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "timeUnits",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/timeunits"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct/warmupIterations": {
+  "abstract" : [
+    {
+      "text" : "Specifies a number of warmup iterations should be performed before the measurement to",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "reduce outliers due to e.g. cache population",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "warmupIterations"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/warmupIterations",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "warmupIterations",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/warmupiterations"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkTimeUnits": {
+  "abstract" : [
+    {
+      "text" : "Time units for cpu\/wall clock time",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkTimeUnits"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkTimeUnits"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BenchmarkTimeUnits",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarktimeunits"
+}
+}
+}

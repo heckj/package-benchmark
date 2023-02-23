@@ -1,0 +1,283 @@
+{
+  "abstract" : [
+    {
+      "text" : "Inherited from ",
+      "type" : "text"
+    },
+    {
+      "code" : "CustomStringConvertible.description",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric"
+      ],
+      [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/CustomStringConvertible-Implementations"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/description"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "Benchmark",
+    "externalID" : "s:9Benchmark0A6MetricO11descriptionSSvp",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "var"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "description"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:SS",
+        "text" : "String"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Benchmark"
+      }
+    ],
+    "remoteSource" : {
+      "fileName" : "BenchmarkMetric.swift",
+      "url" : "https:\/\/github.com\/ordo-one\/package-benchmark\/blob\/main\/Sources\/Benchmark\/BenchmarkMetric.swift#L130"
+    },
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "description"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "var"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "description"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:SS",
+              "text" : "String"
+            },
+            {
+              "kind" : "text",
+              "text" : " { "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "get"
+            },
+            {
+              "kind" : "text",
+              "text" : " }"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/countable"
+      ],
+      "title" : "Inspecting Metrics"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/benchmark\/benchmarkmetric\/description"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric": {
+  "abstract" : [
+    {
+      "text" : "Metrics supported by benchmark.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkMetric"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkMetric"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BenchmarkMetric",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/CustomStringConvertible-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/CustomStringConvertible-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "CustomStringConvertible Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/customstringconvertible-implementations"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/countable": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "countable"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/countable",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "countable",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/countable"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/description": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "description"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/description",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "description",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/description"
+}
+}
+}

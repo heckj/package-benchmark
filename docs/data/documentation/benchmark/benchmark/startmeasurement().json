@@ -1,0 +1,343 @@
+{
+  "abstract" : [
+    {
+      "text" : "If the benchmark contains a preamble setup that should not be part of the measurement",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "code" : "startMeasurement",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " can be called explicitly to define when measurement should begin.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "Otherwise the whole benchmark will be measured.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/startMeasurement()"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:9BenchmarkAAC16startMeasurementyyF",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "startMeasurement"
+      },
+      {
+        "kind" : "text",
+        "text" : "()"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Benchmark"
+      }
+    ],
+    "remoteSource" : {
+      "fileName" : "Benchmark.swift",
+      "url" : "https:\/\/github.com\/ordo-one\/package-benchmark\/blob\/main\/Sources\/Benchmark\/Benchmark.swift#L196"
+    },
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "startMeasurement()"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "func"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "startMeasurement"
+            },
+            {
+              "kind" : "text",
+              "text" : "()"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/scaledIterations",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/stopMeasurement()"
+      ],
+      "title" : "Writing Benchmarks"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/benchmark\/benchmark\/startmeasurement()"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Defines a benchmark",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Benchmark"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Benchmark"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/scaledIterations": {
+  "abstract" : [
+    {
+      "text" : "Convenience range to iterate over for benchmarks",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "scaledIterations"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sn",
+      "text" : "Range"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/scaledIterations",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "scaledIterations",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/scalediterations"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/startMeasurement()": {
+  "abstract" : [
+    {
+      "text" : "If the benchmark contains a preamble setup that should not be part of the measurement",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "code" : "startMeasurement",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " can be called explicitly to define when measurement should begin.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "Otherwise the whole benchmark will be measured.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "startMeasurement"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/startMeasurement()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "startMeasurement()",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/startmeasurement()"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/stopMeasurement()": {
+  "abstract" : [
+    {
+      "text" : "If the benchmark contains a postample that should not be part of the measurement",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "code" : "startMeasurement",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " can be called explicitly to define when measurement should begin.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "Otherwise the whole benchmark will be measured.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "stopMeasurement"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/stopMeasurement()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "stopMeasurement()",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/stopmeasurement()"
+}
+}
+}

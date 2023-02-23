@@ -1,0 +1,775 @@
+{
+  "abstract" : [
+    {
+      "text" : "Benchmarks supports a wide range of benchmark metrics and also allows you to create custom benchmark metrics.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Metrics"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "Benchmark"
+      }
+    ],
+    "role" : "article",
+    "roleHeading" : "Article",
+    "title" : "Metrics and Thresholds"
+  },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "Overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A fairly wide range of metrics can be captured by the benchmarks - most metrics are avilable on both macOS and Linux, but a few are not easily obtained and will thus not yield results on that platform, even if specified.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Metrics",
+          "level" : 3,
+          "text" : "Metrics",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Currently supported metrics are:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "CPU user space time spent for running the test",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "cpuUser",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "CPU system time spent for running the test",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "cpuSystem",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "CPU total time spent for running the test (system + user)",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "cpuTotal",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Wall clock time for running the test",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "wallClock",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The throughput in operations \/ second",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "throughput",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The resident memory usage - sampled during runtime",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "peakMemoryResident",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The virtual memory usage - sampled during runtime",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "peakMemoryVirtual",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The number of small malloc calls according to jemalloc",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "mallocCountSmall",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The number of large malloc calls according to jemalloc",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "mallocCountLarge",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The total number of mallocs according to jemalloc",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "mallocCountTotal",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The amount of allocated resident memory by the application (not including allocator metadata overhead etc) according to jemalloc",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "allocatedResidentMemory",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The number of small+large mallocs - small+large frees in resident memory (just a possible leak)",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "memoryLeaked",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The number of syscalls made during the test – macOS only",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "syscalls",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The number of context switches made during the test – macOS only",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "contextSwitches",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The maximum number of threads in the process under the test (not exact, sampled)",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "threads",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The maximum number of threads actually running under the test (not exact, sampled) – macOS only",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "threadsRunning",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The number of I\/O read syscalls performed e.g. read(2) \/ pread(2) – Linux only",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "readSyscalls",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The number of I\/O write syscalls performed e.g. write(2) \/ pwrite(2) – Linux only",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "writeSyscalls",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The number of bytes read from storage (but may be satisfied by pagecache!) – Linux only",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "readBytesLogical",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The number bytes written to storage (but may be cached) – Linux only",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "writeBytesLogical",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The number of bytes physically read from a block device (i.e. disk) – Linux only",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "readBytesPhysical",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The number of bytes physicall written to a block device (i.e. disk) – Linux only",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "writeBytesPhysical",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            }
+          ],
+          "type" : "termList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Additionally, ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "custom metrics",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " are supported ",
+              "type" : "text"
+            },
+            {
+              "code" : "custom(_ name: String, polarity: Polarity = .prefersSmaller)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " as outlined in the writing benchmarks documentation.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Thresholds",
+          "level" : 3,
+          "text" : "Thresholds",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For comparison (",
+              "type" : "text"
+            },
+            {
+              "code" : "swift package benchmark compare",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ") operations, there’s a set of default thresholds that are used which are fairly strict. It is also possible to define both absolute and relative thresholds, ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "per metric",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : ", that will be used for such comparisons (or that a given metric should be skipped completely).",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "See ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/WritingBenchmarks",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " or look at the sample code to see how custom thresholds can be set up.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/GettingStarted",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/WritingBenchmarks",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/RunningBenchmarks",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Workflows"
+      ],
+      "title" : "Essentials"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/benchmark\/metrics"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/GettingStarted": {
+  "abstract" : [
+    {
+      "text" : "Before creating your own benchmarks, you must install the required prerequisites and add a dependency on Benchmark to your package.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/GettingStarted",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Getting Started",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/gettingstarted"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/RunningBenchmarks": {
+  "abstract" : [
+    {
+      "text" : "Use the SwiftPM package plugin ",
+      "type" : "text"
+    },
+    {
+      "code" : "benchmark",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " to run your benchmarks",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/RunningBenchmarks",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Running Benchmarks",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/runningbenchmarks"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Workflows": {
+  "abstract" : [
+    {
+      "text" : "Benchmark supports local workflow patterns as well as CI integration to enforce benchmark performance.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Workflows",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Workflows",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/workflows"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/WritingBenchmarks": {
+  "abstract" : [
+    {
+      "text" : "Create benchmark suites to run and measure your benchmarks.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/WritingBenchmarks",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Writing Benchmarks",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/writingbenchmarks"
+}
+}
+}

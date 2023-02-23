@@ -1,0 +1,756 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct"
+      ],
+      [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/init(metrics:timeUnits:warmupIterations:scalingFactor:maxDuration:maxIterations:skip:thresholds:)"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:9BenchmarkAAC13ConfigurationV7metrics9timeUnits16warmupIterations13scalingFactor11maxDuration0jG04skip10thresholdsADSayAA0A6MetricOG_AA0a4TimeE0OSiAA0a7ScalingI0Os0K0VSiSbSDyAnA0A6ResultV20PercentileThresholdsVGSgtcfc",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "init"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "metrics"
+      },
+      {
+        "kind" : "text",
+        "text" : ": ["
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+        "text" : "BenchmarkMetric"
+      },
+      {
+        "kind" : "text",
+        "text" : "], "
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "timeUnits"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9Benchmark0A9TimeUnitsO",
+        "text" : "BenchmarkTimeUnits"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "warmupIterations"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Si",
+        "text" : "Int"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "scalingFactor"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9Benchmark0A13ScalingFactorO",
+        "text" : "BenchmarkScalingFactor"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "maxDuration"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s8DurationV",
+        "text" : "Duration"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "maxIterations"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Si",
+        "text" : "Int"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "skip"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sb",
+        "text" : "Bool"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "thresholds"
+      },
+      {
+        "kind" : "text",
+        "text" : ": ["
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+        "text" : "BenchmarkMetric"
+      },
+      {
+        "kind" : "text",
+        "text" : " : "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "BenchmarkResult"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "PercentileThresholds"
+      },
+      {
+        "kind" : "text",
+        "text" : "]?)"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Benchmark"
+      }
+    ],
+    "remoteSource" : {
+      "fileName" : "Benchmark.swift",
+      "url" : "https:\/\/github.com\/ordo-one\/package-benchmark\/blob\/main\/Sources\/Benchmark\/Benchmark.swift#L285"
+    },
+    "role" : "symbol",
+    "roleHeading" : "Initializer",
+    "symbolKind" : "init",
+    "title" : "init(metrics:timeUnits:warmupIterations:scalingFactor:maxDuration:maxIterations:skip:thresholds:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "init"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "metrics"
+            },
+            {
+              "kind" : "text",
+              "text" : ": ["
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+              "text" : "BenchmarkMetric"
+            },
+            {
+              "kind" : "text",
+              "text" : "] = defaultConfiguration.metrics, "
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "timeUnits"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9Benchmark0A9TimeUnitsO",
+              "text" : "BenchmarkTimeUnits"
+            },
+            {
+              "kind" : "text",
+              "text" : " = defaultConfiguration.timeUnits, "
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "warmupIterations"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Si",
+              "text" : "Int"
+            },
+            {
+              "kind" : "text",
+              "text" : " = defaultConfiguration.warmupIterations, "
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "scalingFactor"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9Benchmark0A13ScalingFactorO",
+              "text" : "BenchmarkScalingFactor"
+            },
+            {
+              "kind" : "text",
+              "text" : " = defaultConfiguration.scalingFactor, "
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "maxDuration"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s8DurationV",
+              "text" : "Duration"
+            },
+            {
+              "kind" : "text",
+              "text" : " = defaultConfiguration.maxDuration, "
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "maxIterations"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Si",
+              "text" : "Int"
+            },
+            {
+              "kind" : "text",
+              "text" : " = defaultConfiguration.maxIterations, "
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "skip"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Sb",
+              "text" : "Bool"
+            },
+            {
+              "kind" : "text",
+              "text" : " = defaultConfiguration.skip, "
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "thresholds"
+            },
+            {
+              "kind" : "text",
+              "text" : ": ["
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+              "text" : "BenchmarkMetric"
+            },
+            {
+              "kind" : "text",
+              "text" : " : "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "BenchmarkResult"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "PercentileThresholds"
+            },
+            {
+              "kind" : "text",
+              "text" : "]? = defaultConfiguration.thresholds)"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/init(metrics:timeunits:warmupiterations:scalingfactor:maxduration:maxiterations:skip:thresholds:)"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Defines a benchmark",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Benchmark"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Benchmark"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct": {
+  "abstract" : [
+    {
+      "text" : "The configuration settings for running a benchmark.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Configuration"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Configuration"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Benchmark.Configuration",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct/init(metrics:timeUnits:warmupIterations:scalingFactor:maxDuration:maxIterations:skip:thresholds:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "metrics"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+      "text" : "BenchmarkMetric"
+    },
+    {
+      "kind" : "text",
+      "text" : "], "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "timeUnits"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A9TimeUnitsO",
+      "text" : "BenchmarkTimeUnits"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "warmupIterations"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "scalingFactor"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A13ScalingFactorO",
+      "text" : "BenchmarkScalingFactor"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "maxDuration"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s8DurationV",
+      "text" : "Duration"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "maxIterations"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "skip"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "thresholds"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+      "text" : "BenchmarkMetric"
+    },
+    {
+      "kind" : "text",
+      "text" : " : "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "BenchmarkResult"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "PercentileThresholds"
+    },
+    {
+      "kind" : "text",
+      "text" : "]?)"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/init(metrics:timeUnits:warmupIterations:scalingFactor:maxDuration:maxIterations:skip:thresholds:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(metrics:timeUnits:warmupIterations:scalingFactor:maxDuration:maxIterations:skip:thresholds:)",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/init(metrics:timeunits:warmupiterations:scalingfactor:maxduration:maxiterations:skip:thresholds:)"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric": {
+  "abstract" : [
+    {
+      "text" : "Metrics supported by benchmark.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkMetric"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkMetric"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BenchmarkMetric",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkScalingFactor"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkScalingFactor"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BenchmarkScalingFactor",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkscalingfactor"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkTimeUnits": {
+  "abstract" : [
+    {
+      "text" : "Time units for cpu\/wall clock time",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkTimeUnits"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkTimeUnits"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BenchmarkTimeUnits",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarktimeunits"
+}
+}
+}

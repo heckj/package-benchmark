@@ -1,0 +1,358 @@
+{
+  "abstract" : [
+    {
+      "text" : "Benchmark supports local workflow patterns as well as CI integration to enforce benchmark performance.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Workflows"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "Benchmark"
+      }
+    ],
+    "role" : "article",
+    "roleHeading" : "Article",
+    "title" : "Workflows"
+  },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "Overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "While developing locally, you can set benchmark baselines, compare against a baseline, or compare two different baselines.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Local-developer-workflow",
+          "level" : 3,
+          "text" : "Local developer workflow",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Typical workflow for a developer who wants to track performance metrics on the local machine while during performance work, would be to store one or more baselines (either default or named baselines), with e.g:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "swift package --allow-writing-to-package-directory benchmark baseline update"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "or",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "swift package --allow-writing-to-package-directory benchmark baseline alpha update"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "then while working, simply compare current state of local repo with the previously recorded baseline:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "swift package benchmark baseline compare"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "or",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "swift package benchmark compare alpha"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If you have stored multiple baselines (for example for different approaches to solving a given performance issue), you can easily compare the two approaches by using named baselines for each and then compare them:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "swift package benchmark compare alpha beta"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Debugging-crashing-benchmarks",
+          "level" : 4,
+          "text" : "Debugging crashing benchmarks",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The benchmark executables are set up to automatically run all tests when run standalone with simple debug output - this is to enable workflows where the benchmark is run in the Xcode debugger or with Instruments if desired - or with ",
+              "type" : "text"
+            },
+            {
+              "code" : "lldb",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " on the command line on Linux to support debugging in problematic performance tests.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "GitHub-CI-workflow",
+          "level" : 3,
+          "text" : "GitHub CI workflow",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For GitHub, there are sample workflows provided:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Delta comparison workflow, which will run the benchmark on both the pull request and the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "main",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " branch and compare the results with the specified thresholds and fail\/succeed the workflow accordingly. It also makes a comment into the PR with the results (which will be updated with subsequent runs of the workflow for the PR)",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Simple benchmark - simply runs the benchmark test suite on the pull request and update a separate PR commend with a link to the results.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For reproducible and good comparable results, it is ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "highly",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " recommended to set up a private GitHub runner that is",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "dedicated to performance benchmark runs.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/GettingStarted",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/WritingBenchmarks",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Metrics",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/RunningBenchmarks"
+      ],
+      "title" : "Essentials"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/benchmark\/workflows"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/GettingStarted": {
+  "abstract" : [
+    {
+      "text" : "Before creating your own benchmarks, you must install the required prerequisites and add a dependency on Benchmark to your package.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/GettingStarted",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Getting Started",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/gettingstarted"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Metrics": {
+  "abstract" : [
+    {
+      "text" : "Benchmarks supports a wide range of benchmark metrics and also allows you to create custom benchmark metrics.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Metrics",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Metrics and Thresholds",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/metrics"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/RunningBenchmarks": {
+  "abstract" : [
+    {
+      "text" : "Use the SwiftPM package plugin ",
+      "type" : "text"
+    },
+    {
+      "code" : "benchmark",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " to run your benchmarks",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/RunningBenchmarks",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Running Benchmarks",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/runningbenchmarks"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/WritingBenchmarks": {
+  "abstract" : [
+    {
+      "text" : "Create benchmark suites to run and measure your benchmarks.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/WritingBenchmarks",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Writing Benchmarks",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/writingbenchmarks"
+}
+}
+}

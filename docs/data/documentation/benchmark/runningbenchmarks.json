@@ -1,0 +1,838 @@
+{
+  "abstract" : [
+    {
+      "text" : "Use the SwiftPM package plugin ",
+      "type" : "text"
+    },
+    {
+      "code" : "benchmark",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " to run your benchmarks",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/RunningBenchmarks"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "Benchmark"
+      }
+    ],
+    "role" : "article",
+    "roleHeading" : "Article",
+    "title" : "Running Benchmarks"
+  },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "Overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The most straightforward way to just run all benchmarks is simply:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "swift package benchmark"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "To perform additional operations a command verb and\/or additional options can be specified:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "swift package benchmark <command verb> [<options>]"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Command-verbs",
+          "level" : 3,
+          "text" : "Command verbs",
+          "type" : "heading"
+        },
+        {
+          "items" : [
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "run the benchmarks - default action if none specified",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "run",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "list available benchmarks that can be run per benchmark target",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "list",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Lists the available baselines stored per benchmark target",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "baseline list",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "perform the specified subaction on one or more specified benchmark baselines",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "baseline read|update|delete|compare",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Display usage help to the terminal",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "help",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            }
+          ],
+          "type" : "termList"
+        },
+        {
+          "anchor" : "Options",
+          "level" : 3,
+          "text" : "Options",
+          "type" : "heading"
+        },
+        {
+          "items" : [
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Benchmarks matching the regexp filter that should be run",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "--filter <filter>",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Benchmarks matching the regexp filter that should be skipped",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "--skip <skip>",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Benchmark targets matching the regexp filter that should be run",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "--target <target>",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Benchmark targets matching the regexp filter that should be skipped",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "--skip-target <skip-target>",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The output format to use, one of: [“text”, “markdown”, “influx”, “percentiles”, “tsv”, “jmh”], default is ‘text’",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "--format <format>",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The path where exported data is stored, default is the current directory (”.”).",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "--path <path>",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Specifies that output should be supressed (useful for if you just want to check return code)",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "--quiet",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Specifies that some of the text output should be scaled using the scalingFactor (denoted by ‘*’ in output)",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "--scale",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "Specifies that benchmark progress information should not be displayed",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "--no-progress",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            },
+            {
+              "definition" : {
+                "content" : [
+                  {
+                    "inlineContent" : [
+                      {
+                        "text" : "The grouping to use, one of: [“metric”, “benchmark”]. default is ‘benchmark’",
+                        "type" : "text"
+                      }
+                    ],
+                    "type" : "paragraph"
+                  }
+                ]
+              },
+              "term" : {
+                "inlineContent" : [
+                  {
+                    "code" : "--grouping <grouping>",
+                    "type" : "codeVoice"
+                  }
+                ]
+              }
+            }
+          ],
+          "type" : "termList"
+        },
+        {
+          "anchor" : "Usage",
+          "level" : 2,
+          "text" : "Usage",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "code" : "swift package benchmark help",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " provides usage notes",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "OVERVIEW: Runs your benchmark targets located in Benchmarks\/",
+            "",
+            "Runs the benchmarks, lists or operates on baselines (a named, stored set of results).",
+            "",
+            "For the 'text' default format, the output is implicitly 'stdout' unless otherwise specified.",
+            "For all other formats, the output is to a file in either the current working directory, or",
+            "the directory specified by the '--path' option, unless the special 'stdout' path is specified",
+            "in which case output will go to stdout (useful for e.g. baseline 'tsv' format export piped to youplot).",
+            "",
+            "To allow writing to the package directory, you may need to pass the appropriate option to swift package:",
+            "swift package --allow-writing-to-package-directory benchmark <command> <options>",
+            "",
+            "USAGE: swift package benchmark <command>",
+            "",
+            "swift package benchmark run <options>",
+            "swift package benchmark list",
+            "swift package benchmark baseline list",
+            "swift package benchmark baseline [read|update|delete|compare] [baseline1 baseline2 ... baselineN] <options>",
+            "swift package benchmark help",
+            "",
+            "ARGUMENTS:",
+            "<command>               The benchmark command to perform, one of: [\"run\", \"list\", \"baseline\", \"help\"]. If not specified, 'run' is implied.",
+            "",
+            "OPTIONS:",
+            "--filter <filter>       Benchmarks matching the regexp filter that should be run",
+            "--skip <skip>           Benchmarks matching the regexp filter that should be skipped",
+            "--target <target>       Benchmark targets matching the regexp filter that should be run",
+            "--skip-target <skip-target>",
+            "Benchmark targets matching the regexp filter that should be skipped",
+            "--format <format>       The output format to use, one of: [\"text\", \"markdown\", \"influx\", \"percentiles\", \"tsv\", \"jmh\"], default is 'text'",
+            "--path <path>           The path where exported data is stored, default is the current directory (\".\"). ",
+            "--quiet                 Specifies that output should be supressed (useful for if you just want to check return code)",
+            "--scale                 Specifies that some of the text output should be scaled using the scalingFactor (denoted by '*' in output)",
+            "--no-progress           Specifies that benchmark progress information should not be displayed",
+            "--grouping <grouping>   The grouping to use, one of: [\"metric\", \"benchmark\"]. default is 'benchmark'"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Network-or-disk-permissions-failures",
+          "level" : 2,
+          "text" : "Network or disk permissions failures",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "We’ve seen one instance of strange permissioning failures for disk writes for tests that use LMDB (where only the lock file can be created, but the actual data file fails - even when specifying ",
+              "type" : "text"
+            },
+            {
+              "code" : "--allow-writing-to-package-directory",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ").",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "To workaround such issues if needed, disable running in the sandbox with:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "swift package --disable-sandbox benchmark"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "This is also required for e.g. benchmarks that uses the network.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Sample-usage",
+          "level" : 2,
+          "text" : "Sample usage",
+          "type" : "heading"
+        },
+        {
+          "anchor" : "Run-all-benchmark-targets",
+          "level" : 3,
+          "text" : "Run all benchmark targets:",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "swift package benchmark"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Run-all-benchmark-targets-but-display-by-metric-instead-of-by-test",
+          "level" : 3,
+          "text" : "Run all benchmark targets, but display by metric instead of by test:",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "swift package benchmark --grouping metric"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Run-targets--benchmarks-with-regex-matching",
+          "level" : 3,
+          "text" : "Run targets \/ benchmarks with regex matching",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "swift package benchmark --target \".*Time\" --filter \".*k\\.\" --skip \".*UTC.*\" --skip-target \".*Time\""
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "List-available-benchmark-targets",
+          "level" : 3,
+          "text" : "List available benchmark targets:",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "swift package benchmark list"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Run-specific-benchmark-target",
+          "level" : 3,
+          "text" : "Run specific benchmark target:",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "swift package benchmark run --target Frostflake"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Compare-with-the-current-baseline",
+          "level" : 3,
+          "text" : "Compare with the current baseline:",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "swift package benchmark baseline compare baseline1"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Compare-two-named-baselines",
+          "level" : 3,
+          "text" : "Compare two named baselines",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "swift package benchmark baseline compare alpha beta"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Compare-two-named-baselines-suppressing-table-output",
+          "level" : 3,
+          "text" : "Compare two named baselines suppressing table output",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "swift package benchmark baseline compare alpha beta --quiet"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Update-benchmark-baseline-for-all-targets",
+          "level" : 3,
+          "text" : "Update benchmark baseline for all targets:",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "swift package --allow-writing-to-package-directory benchmark baseline update"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Update-benchmark-named-baseline-for-all-targets",
+          "level" : 3,
+          "text" : "Update benchmark named baseline for all targets:",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "swift package --allow-writing-to-package-directory benchmark baseline update alpha"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Update-benchmark-baseline-for-a-specific-target",
+          "level" : 3,
+          "text" : "Update benchmark baseline for a specific target:",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "swift package --allow-writing-to-package-directory benchmark baseline update --target Frostflake-Benchmark"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Export-benchmark-data",
+          "level" : 3,
+          "text" : "Export benchmark data:",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "swift package --allow-writing-to-package-directory benchmark --format jmh "
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Export-benchmark-data",
+          "level" : 3,
+          "text" : "Export benchmark data:",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "swift package --allow-writing-to-package-directory benchmark --format jmh --path xyz"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/GettingStarted",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/WritingBenchmarks",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Metrics",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Workflows"
+      ],
+      "title" : "Essentials"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/benchmark\/runningbenchmarks"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/GettingStarted": {
+  "abstract" : [
+    {
+      "text" : "Before creating your own benchmarks, you must install the required prerequisites and add a dependency on Benchmark to your package.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/GettingStarted",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Getting Started",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/gettingstarted"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Metrics": {
+  "abstract" : [
+    {
+      "text" : "Benchmarks supports a wide range of benchmark metrics and also allows you to create custom benchmark metrics.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Metrics",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Metrics and Thresholds",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/metrics"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Workflows": {
+  "abstract" : [
+    {
+      "text" : "Benchmark supports local workflow patterns as well as CI integration to enforce benchmark performance.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Workflows",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Workflows",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/workflows"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/WritingBenchmarks": {
+  "abstract" : [
+    {
+      "text" : "Create benchmark suites to run and measure your benchmarks.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/WritingBenchmarks",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Writing Benchmarks",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/writingbenchmarks"
+}
+}
+}

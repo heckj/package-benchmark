@@ -1,0 +1,361 @@
+{
+  "abstract" : [
+    {
+      "text" : "CPU user space time spent for running the test",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuUser"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:9Benchmark0A6MetricO7cpuUseryA2CmF",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "case"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "cpuUser"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Benchmark"
+      }
+    ],
+    "remoteSource" : {
+      "fileName" : "BenchmarkMetric.swift",
+      "url" : "https:\/\/github.com\/ordo-one\/package-benchmark\/blob\/main\/Sources\/Benchmark\/BenchmarkMetric.swift#L19"
+    },
+    "role" : "symbol",
+    "roleHeading" : "Case",
+    "symbolKind" : "case",
+    "title" : "BenchmarkMetric.cpuUser"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "case"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "cpuUser"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/wallClock",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/syscalls",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/contextSwitches",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/threads",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/threadsRunning",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuSystem"
+      ],
+      "title" : "System Metrics"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/benchmark\/benchmarkmetric\/cpuuser"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric": {
+  "abstract" : [
+    {
+      "text" : "Metrics supported by benchmark.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkMetric"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkMetric"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BenchmarkMetric",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/contextSwitches": {
+  "abstract" : [
+    {
+      "text" : "Measure number of context switches made during the test",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "contextSwitches"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/contextSwitches",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.contextSwitches",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/contextswitches"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/cpuSystem": {
+  "abstract" : [
+    {
+      "text" : "CPU system time spent for running the test",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "cpuSystem"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuSystem",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.cpuSystem",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/cpusystem"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/cpuUser": {
+  "abstract" : [
+    {
+      "text" : "CPU user space time spent for running the test",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "cpuUser"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuUser",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.cpuUser",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/cpuuser"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/syscalls": {
+  "abstract" : [
+    {
+      "text" : "Measure number of syscalls made during the test",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "syscalls"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/syscalls",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.syscalls",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/syscalls"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/threads": {
+  "abstract" : [
+    {
+      "text" : "Sample the maximum number of threads in the process under the test (not exact)",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "threads"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/threads",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.threads",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/threads"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/threadsRunning": {
+  "abstract" : [
+    {
+      "text" : "Sample the maximum number of threads actually running under the test (not exact)",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "threadsRunning"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/threadsRunning",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.threadsRunning",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/threadsrunning"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/wallClock": {
+  "abstract" : [
+    {
+      "text" : "Wall clock time for running the test",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "wallClock"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/wallClock",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.wallClock",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/wallclock"
+}
+}
+}

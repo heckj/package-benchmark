@@ -1,0 +1,1651 @@
+{
+  "abstract" : [
+    {
+      "text" : "Metrics supported by benchmark.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:9Benchmark0A6MetricO",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "enum"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "BenchmarkMetric"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Benchmark"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "BenchmarkMetric"
+      }
+    ],
+    "remoteSource" : {
+      "fileName" : "BenchmarkMetric.swift",
+      "url" : "https:\/\/github.com\/ordo-one\/package-benchmark\/blob\/main\/Sources\/Benchmark\/BenchmarkMetric.swift#L17"
+    },
+    "role" : "symbol",
+    "roleHeading" : "Enumeration",
+    "symbolKind" : "enum",
+    "title" : "BenchmarkMetric"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "enum"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "BenchmarkMetric"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Some metrics are only available on macOS or Linux, but you can specify all the metrics without worrying about platform availability.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "If a metric is unavailable on a specific platform, the Benchmark system filters unsupported metrics out as needed.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/s23CustomStringConvertibleP",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/Se",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/SE",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/SQ",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/SH"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits"
+      ],
+      "title" : "Configuring Benchmarks"
+    }
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/default",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/system",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/extended",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/memory",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/disk",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/all"
+      ],
+      "title" : "Metric Collections"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/wallClock",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/syscalls",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/contextSwitches",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/threads",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/threadsRunning",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuSystem",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuUser"
+      ],
+      "title" : "System Metrics"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/wallClock",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuTotal",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/mallocCountTotal",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/throughput",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/peakMemoryResident",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/memoryLeaked",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/allocatedResidentMemory"
+      ],
+      "title" : "Extended System Metrics"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/peakMemoryResident",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/peakMemoryVirtual",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/mallocCountSmall",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/mallocCountLarge",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/mallocCountTotal",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/memoryLeaked",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/allocatedResidentMemory"
+      ],
+      "title" : "Memory Metrics"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/readSyscalls",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/writeSyscalls",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/readBytesLogical",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/writeBytesLogical",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/readBytesPhysical",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/writeBytesPhysical"
+      ],
+      "title" : "Disk Metrics"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/custom(_:polarity:useScalingFactor:)",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/polarity-swift.property",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Polarity-swift.enum"
+      ],
+      "title" : "Custom Metrics"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/description",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/countable"
+      ],
+      "title" : "Inspecting Metrics"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/init(from:)"
+      ],
+      "title" : "Decoding a Metric"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/useScalingFactor"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/CustomStringConvertible-Implementations",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Equatable-Implementations"
+      ],
+      "title" : "Default Implementations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/benchmark\/benchmarkmetric"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.ordo-one.package-benchmark/SE": {
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/SE",
+  "title" : "Swift.Encodable",
+  "type" : "unresolvable"
+},
+"doc://com.github.ordo-one.package-benchmark/SH": {
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
+"doc://com.github.ordo-one.package-benchmark/SQ": {
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/SQ",
+  "title" : "Swift.Equatable",
+  "type" : "unresolvable"
+},
+"doc://com.github.ordo-one.package-benchmark/Se": {
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/Se",
+  "title" : "Swift.Decodable",
+  "type" : "unresolvable"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct": {
+  "abstract" : [
+    {
+      "text" : "The configuration settings for running a benchmark.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Configuration"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Configuration"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Benchmark.Configuration",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric": {
+  "abstract" : [
+    {
+      "text" : "Metrics supported by benchmark.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkMetric"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkMetric"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BenchmarkMetric",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/CustomStringConvertible-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/CustomStringConvertible-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "CustomStringConvertible Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/customstringconvertible-implementations"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/Equatable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Equatable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Equatable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/equatable-implementations"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/Polarity-swift.enum": {
+  "abstract" : [
+    {
+      "text" : "A constant that states whether larger or smaller measurements, relative to a set baseline, indicate better performance.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Polarity"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Polarity-swift.enum",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Polarity"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.Polarity",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/polarity-swift.enum"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/all": {
+  "abstract" : [
+    {
+      "text" : "A collection of all benchmarks supported by this library.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "all"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+      "text" : "BenchmarkMetric"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/all",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "all",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/all"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/allocatedResidentMemory": {
+  "abstract" : [
+    {
+      "text" : "The amount of allocated resident memory according to the memory allocator",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "by the application (does not include metadata overhead etc)",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "allocatedResidentMemory"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/allocatedResidentMemory",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.allocatedResidentMemory",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/allocatedresidentmemory"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/contextSwitches": {
+  "abstract" : [
+    {
+      "text" : "Measure number of context switches made during the test",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "contextSwitches"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/contextSwitches",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.contextSwitches",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/contextswitches"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/countable": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "countable"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/countable",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "countable",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/countable"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/cpuSystem": {
+  "abstract" : [
+    {
+      "text" : "CPU system time spent for running the test",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "cpuSystem"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuSystem",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.cpuSystem",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/cpusystem"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/cpuTotal": {
+  "abstract" : [
+    {
+      "text" : "CPU total time spent for running the test (system + user)",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "cpuTotal"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuTotal",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.cpuTotal",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/cputotal"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/cpuUser": {
+  "abstract" : [
+    {
+      "text" : "CPU user space time spent for running the test",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "cpuUser"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuUser",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.cpuUser",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/cpuuser"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/custom(_:polarity:useScalingFactor:)": {
+  "abstract" : [
+    {
+      "text" : "Custom metric",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "custom"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "polarity"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+      "text" : "BenchmarkMetric"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A6MetricO8PolarityO",
+      "text" : "Polarity"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "useScalingFactor"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/custom(_:polarity:useScalingFactor:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.custom(_:polarity:useScalingFactor:)",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/custom(_:polarity:usescalingfactor:)"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/default": {
+  "abstract" : [
+    {
+      "text" : "The default collection of metrics used for a benchmark.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "`default`"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+      "text" : "BenchmarkMetric"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/default",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "default",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/default"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/description": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "description"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/description",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "description",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/description"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/disk": {
+  "abstract" : [
+    {
+      "text" : "A collection of disk benchmarks.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "disk"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+      "text" : "BenchmarkMetric"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/disk",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "disk",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/disk"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/extended": {
+  "abstract" : [
+    {
+      "text" : "A collection of extended system benchmarks.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "extended"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+      "text" : "BenchmarkMetric"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/extended",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "extended",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/extended"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/init(from:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "from"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s7DecoderP",
+      "text" : "Decoder"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/init(from:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(from:)",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/init(from:)"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/mallocCountLarge": {
+  "abstract" : [
+    {
+      "text" : "Number of large malloc calls",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "mallocCountLarge"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/mallocCountLarge",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.mallocCountLarge",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/malloccountlarge"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/mallocCountSmall": {
+  "abstract" : [
+    {
+      "text" : "Number of small malloc calls",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "mallocCountSmall"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/mallocCountSmall",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.mallocCountSmall",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/malloccountsmall"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/mallocCountTotal": {
+  "abstract" : [
+    {
+      "text" : "Number of small+large mallocs",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "mallocCountTotal"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/mallocCountTotal",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.mallocCountTotal",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/malloccounttotal"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/memory": {
+  "abstract" : [
+    {
+      "text" : "A collection of memory benchmarks.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "memory"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+      "text" : "BenchmarkMetric"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/memory",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "memory",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/memory"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/memoryLeaked": {
+  "abstract" : [
+    {
+      "text" : "Number of small+large mallocs - small+large frees in resident memory",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "memoryLeaked"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/memoryLeaked",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.memoryLeaked",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/memoryleaked"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/peakMemoryResident": {
+  "abstract" : [
+    {
+      "text" : "Measure resident memory usage - sampled during runtime",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "peakMemoryResident"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/peakMemoryResident",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.peakMemoryResident",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/peakmemoryresident"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/peakMemoryVirtual": {
+  "abstract" : [
+    {
+      "text" : "Measure virtual memory usage - sampled during runtime",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "peakMemoryVirtual"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/peakMemoryVirtual",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.peakMemoryVirtual",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/peakmemoryvirtual"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/polarity-swift.property": {
+  "abstract" : [
+    {
+      "text" : "Indicates whether larger or smaller measurements, relative to a set baseline, indicate better performance.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "polarity"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+      "text" : "BenchmarkMetric"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A6MetricO8PolarityO",
+      "text" : "Polarity"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/polarity-swift.property",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "polarity",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/polarity-swift.property"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/readBytesLogical": {
+  "abstract" : [
+    {
+      "text" : "The number of bytes read from storage (but may be satisfied by pagecache!) – Linux only",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "readBytesLogical"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/readBytesLogical",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.readBytesLogical",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/readbyteslogical"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/readBytesPhysical": {
+  "abstract" : [
+    {
+      "text" : "The number of bytes physically read from a block device (i.e. disk) – Linux only",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "readBytesPhysical"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/readBytesPhysical",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.readBytesPhysical",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/readbytesphysical"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/readSyscalls": {
+  "abstract" : [
+    {
+      "text" : "The number of I\/O read syscalls performed e.g. read(2) \/ pread(2) – Linux only",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "readSyscalls"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/readSyscalls",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.readSyscalls",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/readsyscalls"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/syscalls": {
+  "abstract" : [
+    {
+      "text" : "Measure number of syscalls made during the test",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "syscalls"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/syscalls",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.syscalls",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/syscalls"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/system": {
+  "abstract" : [
+    {
+      "text" : "A collection of system benchmarks.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "system"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+      "text" : "BenchmarkMetric"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/system",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "system",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/system"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/threads": {
+  "abstract" : [
+    {
+      "text" : "Sample the maximum number of threads in the process under the test (not exact)",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "threads"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/threads",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.threads",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/threads"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/threadsRunning": {
+  "abstract" : [
+    {
+      "text" : "Sample the maximum number of threads actually running under the test (not exact)",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "threadsRunning"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/threadsRunning",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.threadsRunning",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/threadsrunning"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/throughput": {
+  "abstract" : [
+    {
+      "text" : "Operations \/ second, ",
+      "type" : "text"
+    },
+    {
+      "code" : ".prefersLarger",
+      "type" : "codeVoice"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "throughput"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/throughput",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.throughput",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/throughput"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/useScalingFactor": {
+  "abstract" : [
+    {
+      "text" : "True if this metric should be scaled to the scalingFactor if looking at scaled output.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "useScalingFactor"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/useScalingFactor",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "useScalingFactor",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/usescalingfactor"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/wallClock": {
+  "abstract" : [
+    {
+      "text" : "Wall clock time for running the test",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "wallClock"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/wallClock",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.wallClock",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/wallclock"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/writeBytesLogical": {
+  "abstract" : [
+    {
+      "text" : "The number bytes written to storage (but may be cached) – Linux only",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "writeBytesLogical"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/writeBytesLogical",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.writeBytesLogical",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/writebyteslogical"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/writeBytesPhysical": {
+  "abstract" : [
+    {
+      "text" : "The number of bytes physicall written to a block device (i.e. disk) – Linux only",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "writeBytesPhysical"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/writeBytesPhysical",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.writeBytesPhysical",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/writebytesphysical"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/writeSyscalls": {
+  "abstract" : [
+    {
+      "text" : "The number of I\/O write syscalls performed e.g. write(2) \/ pwrite(2) – Linux only",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "writeSyscalls"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/writeSyscalls",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.writeSyscalls",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/writesyscalls"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkTimeUnits": {
+  "abstract" : [
+    {
+      "text" : "Time units for cpu\/wall clock time",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkTimeUnits"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkTimeUnits"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BenchmarkTimeUnits",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarktimeunits"
+},
+"doc://com.github.ordo-one.package-benchmark/s23CustomStringConvertibleP": {
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/s23CustomStringConvertibleP",
+  "title" : "Swift.CustomStringConvertible",
+  "type" : "unresolvable"
+}
+}
+}

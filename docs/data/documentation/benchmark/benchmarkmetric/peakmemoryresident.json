@@ -1,0 +1,373 @@
+{
+  "abstract" : [
+    {
+      "text" : "Measure resident memory usage - sampled during runtime",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/peakMemoryResident"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:9Benchmark0A6MetricO18peakMemoryResidentyA2CmF",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "case"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "peakMemoryResident"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Benchmark"
+      }
+    ],
+    "remoteSource" : {
+      "fileName" : "BenchmarkMetric.swift",
+      "url" : "https:\/\/github.com\/ordo-one\/package-benchmark\/blob\/main\/Sources\/Benchmark\/BenchmarkMetric.swift#L29"
+    },
+    "role" : "symbol",
+    "roleHeading" : "Case",
+    "symbolKind" : "case",
+    "title" : "BenchmarkMetric.peakMemoryResident"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "case"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "peakMemoryResident"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/wallClock",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuTotal",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/mallocCountTotal",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/throughput",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/memoryLeaked",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/allocatedResidentMemory"
+      ],
+      "title" : "Extended System Metrics"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/benchmark\/benchmarkmetric\/peakmemoryresident"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric": {
+  "abstract" : [
+    {
+      "text" : "Metrics supported by benchmark.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkMetric"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkMetric"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BenchmarkMetric",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/allocatedResidentMemory": {
+  "abstract" : [
+    {
+      "text" : "The amount of allocated resident memory according to the memory allocator",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "by the application (does not include metadata overhead etc)",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "allocatedResidentMemory"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/allocatedResidentMemory",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.allocatedResidentMemory",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/allocatedresidentmemory"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/cpuTotal": {
+  "abstract" : [
+    {
+      "text" : "CPU total time spent for running the test (system + user)",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "cpuTotal"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuTotal",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.cpuTotal",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/cputotal"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/mallocCountTotal": {
+  "abstract" : [
+    {
+      "text" : "Number of small+large mallocs",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "mallocCountTotal"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/mallocCountTotal",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.mallocCountTotal",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/malloccounttotal"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/memoryLeaked": {
+  "abstract" : [
+    {
+      "text" : "Number of small+large mallocs - small+large frees in resident memory",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "memoryLeaked"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/memoryLeaked",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.memoryLeaked",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/memoryleaked"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/peakMemoryResident": {
+  "abstract" : [
+    {
+      "text" : "Measure resident memory usage - sampled during runtime",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "peakMemoryResident"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/peakMemoryResident",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.peakMemoryResident",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/peakmemoryresident"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/throughput": {
+  "abstract" : [
+    {
+      "text" : "Operations \/ second, ",
+      "type" : "text"
+    },
+    {
+      "code" : ".prefersLarger",
+      "type" : "codeVoice"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "throughput"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/throughput",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.throughput",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/throughput"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/wallClock": {
+  "abstract" : [
+    {
+      "text" : "Wall clock time for running the test",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "wallClock"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/wallClock",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkMetric.wallClock",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/wallclock"
+}
+}
+}

@@ -1,0 +1,787 @@
+{
+  "abstract" : [
+    {
+      "text" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "Benchmark",
+    "modules" : [
+      {
+        "name" : "Benchmark"
+      }
+    ],
+    "role" : "collection",
+    "roleHeading" : "Framework",
+    "symbolKind" : "module",
+    "title" : "Benchmark"
+  },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "Overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Performance is a key feature for many apps and frameworks. Benchmark helps make it easy to measure and track many different metrics that affects performance, such as CPU usage, memory usage and use of operating system resources such as threads and system calls.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Benchmark supports several key workflows for performance measurements, e.g.:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "Automated Pull Request performance regression checks",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "strong"
+                    },
+                    {
+                      "text" : " by comparing the performance metrics of a pull request with the main branch and having the PR check fail if there is a regression (e.g. no added memory allocations, or that the runtime was at least as good) with ready to use workflows for GitHub CI",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "Manual comparison of multiple performance baselines",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "strong"
+                    },
+                    {
+                      "text" : " for iterative or A\/B performance work by an individual developer",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "Export of benchmark results in several formats",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "strong"
+                    },
+                    {
+                      "text" : " such as JMH (Java Microbenchmark Harness), TSV (tab-separated-values), ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "http:\/\/hdrhistogram.org",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " (",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "http:\/\/www.david-andrzejewski.com\/publications\/hdr.pdf",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : "), etc. This allows for tracking performance over time or analyzing\/visualizing with other tools such as ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "https:\/\/jmh.morethan.io",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : ", ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "http:\/\/www.gnuplot.info",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : ", ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "https:\/\/github.com\/red-data-tools\/YouPlot",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : ", ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "http:\/\/hdrhistogram.github.io\/HdrHistogram\/plotFiles.html",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " and more.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Benchmark provides a quick way for validation of performance metrics, while other more specialized tools such as Instruments, DTrace, Heaptrack, Leaks, Sample and more can be used for finding root causes for any deviations found.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Benchmark is suitable for both smaller ad-hoc benchmarks only caring about runtime (in the spirit of ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "https:\/\/github.com\/google\/swift-benchmark",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ") and more extensive benchmarks that care about additional metrics such as memory allocations, syscalls, thread usage and more. Thanks to the HDR Histogram foundation it’s especially suitable for capturing latency statistics for large number of samples.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The default text output from Benchmark is oriented around ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "https:\/\/en.wikipedia.org\/wiki\/Five-number_summary",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " percentiles, plus ",
+              "type" : "text"
+            },
+            {
+              "code" : "p90",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "code" : "p99",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "We’ve found that focusing on percentiles rather than average or standard deviations as is common, is more useful for a wider range of benchmark measurements and allow for a consistent way of expressing benchmark results and CI thresholds deviations looking at both throughput and latency measurements (which typically do ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "not",
+                  "type" : "text"
+                }
+              ],
+              "type" : "strong"
+            },
+            {
+              "text" : " have a standardized distribution and almost always are multi-modal in nature).",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "That being said, some of the export formats do include more traditional average\/stddev type of values and the Benchmark infrastructure actually captures ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "all",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " samples for a test run, so there are even export functionality for all the raw data points for arbitrary post-run statistical analysis as desired.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/GettingStarted",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/WritingBenchmarks",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Metrics",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/RunningBenchmarks",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Workflows"
+      ],
+      "title" : "Essentials"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark"
+      ],
+      "title" : "Benchmarks"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits"
+      ],
+      "title" : "Configuring Benchmarks"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/registerBenchmarks()"
+      ],
+      "title" : "Registering Benchmarks"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/blackHole(_:)"
+      ],
+      "title" : "Supporting Functions"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor"
+      ],
+      "title" : "Enumerations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/benchmark"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Defines a benchmark",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Benchmark"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Benchmark"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct": {
+  "abstract" : [
+    {
+      "text" : "The configuration settings for running a benchmark.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Configuration"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Configuration"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Benchmark.Configuration",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric": {
+  "abstract" : [
+    {
+      "text" : "Metrics supported by benchmark.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkMetric"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkMetric"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BenchmarkMetric",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkScalingFactor"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkScalingFactor"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BenchmarkScalingFactor",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkscalingfactor"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkTimeUnits": {
+  "abstract" : [
+    {
+      "text" : "Time units for cpu\/wall clock time",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkTimeUnits"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkTimeUnits"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BenchmarkTimeUnits",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarktimeunits"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/GettingStarted": {
+  "abstract" : [
+    {
+      "text" : "Before creating your own benchmarks, you must install the required prerequisites and add a dependency on Benchmark to your package.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/GettingStarted",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Getting Started",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/gettingstarted"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Metrics": {
+  "abstract" : [
+    {
+      "text" : "Benchmarks supports a wide range of benchmark metrics and also allows you to create custom benchmark metrics.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Metrics",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Metrics and Thresholds",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/metrics"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/RunningBenchmarks": {
+  "abstract" : [
+    {
+      "text" : "Use the SwiftPM package plugin ",
+      "type" : "text"
+    },
+    {
+      "code" : "benchmark",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " to run your benchmarks",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/RunningBenchmarks",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Running Benchmarks",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/runningbenchmarks"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Workflows": {
+  "abstract" : [
+    {
+      "text" : "Benchmark supports local workflow patterns as well as CI integration to enforce benchmark performance.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Workflows",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Workflows",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/workflows"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/WritingBenchmarks": {
+  "abstract" : [
+    {
+      "text" : "Create benchmark suites to run and measure your benchmarks.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/WritingBenchmarks",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Writing Benchmarks",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/writingbenchmarks"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/blackHole(_:)": {
+  "abstract" : [
+    {
+      "text" : "A function to foil compiler optimizations that would otherwise optimize out code you want to benchmark.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "blackHole"
+    },
+    {
+      "kind" : "text",
+      "text" : "(some "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "Any"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/blackHole(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "blackHole(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/blackhole(_:)"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/registerBenchmarks()": {
+  "abstract" : [
+    {
+      "text" : "The entry point for defining benchmarks, expected to be overridden by benchmarks you write.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "registerBenchmarks"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/registerBenchmarks()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "registerBenchmarks()",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/registerbenchmarks()"
+},
+"http://hdrhistogram.github.io/HdrHistogram/plotFiles.html": {
+  "identifier" : "http:\/\/hdrhistogram.github.io\/HdrHistogram\/plotFiles.html",
+  "title" : "HDR Histogram analyzer",
+  "titleInlineContent" : [
+    {
+      "text" : "HDR Histogram analyzer",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "http:\/\/hdrhistogram.github.io\/HdrHistogram\/plotFiles.html"
+},
+"http://hdrhistogram.org": {
+  "identifier" : "http:\/\/hdrhistogram.org",
+  "title" : "HDR Histogram",
+  "titleInlineContent" : [
+    {
+      "text" : "HDR Histogram",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "http:\/\/hdrhistogram.org"
+},
+"http://www.david-andrzejewski.com/publications/hdr.pdf": {
+  "identifier" : "http:\/\/www.david-andrzejewski.com\/publications\/hdr.pdf",
+  "title" : "analysis",
+  "titleInlineContent" : [
+    {
+      "text" : "analysis",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "http:\/\/www.david-andrzejewski.com\/publications\/hdr.pdf"
+},
+"http://www.gnuplot.info": {
+  "identifier" : "http:\/\/www.gnuplot.info",
+  "title" : "Gnuplot",
+  "titleInlineContent" : [
+    {
+      "text" : "Gnuplot",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "http:\/\/www.gnuplot.info"
+},
+"https://en.wikipedia.org/wiki/Five-number_summary": {
+  "identifier" : "https:\/\/en.wikipedia.org\/wiki\/Five-number_summary",
+  "title" : "the five-number summary",
+  "titleInlineContent" : [
+    {
+      "text" : "the five-number summary",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/en.wikipedia.org\/wiki\/Five-number_summary"
+},
+"https://github.com/google/swift-benchmark": {
+  "identifier" : "https:\/\/github.com\/google\/swift-benchmark",
+  "title" : "Google’s swift-benchmark",
+  "titleInlineContent" : [
+    {
+      "text" : "Google’s swift-benchmark",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/github.com\/google\/swift-benchmark"
+},
+"https://github.com/red-data-tools/YouPlot": {
+  "identifier" : "https:\/\/github.com\/red-data-tools\/YouPlot",
+  "title" : "YouPlot",
+  "titleInlineContent" : [
+    {
+      "text" : "YouPlot",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/github.com\/red-data-tools\/YouPlot"
+},
+"https://jmh.morethan.io": {
+  "identifier" : "https:\/\/jmh.morethan.io",
+  "title" : "JMH visualizer",
+  "titleInlineContent" : [
+    {
+      "text" : "JMH visualizer",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/jmh.morethan.io"
+}
+}
+}

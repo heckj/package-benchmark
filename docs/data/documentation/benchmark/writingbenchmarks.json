@@ -1,0 +1,1122 @@
+{
+  "abstract" : [
+    {
+      "text" : "Create benchmark suites to run and measure your benchmarks.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/WritingBenchmarks"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "Benchmark"
+      }
+    ],
+    "role" : "article",
+    "roleHeading" : "Article",
+    "title" : "Writing Benchmarks"
+  },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "Overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Create benchmarks declaratively using the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " initalizer, specifying configuration and the work to be measured in a trailing closure.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The minimal code for a benchmark suite running with a default configuration would be:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "\/\/ import supporting infrastructure",
+            "import BenchmarkSupport",
+            "",
+            "\/\/ Required for main() definition to not get linker errors",
+            "@main extension BenchmarkRunner {}      ",
+            "",
+            "\/\/ Register benchmarks",
+            "@_dynamicReplacement(for: registerBenchmarks) ",
+            "func benchmarks() {",
+            "",
+            "    Benchmark(\"Minimal benchmark\") { benchmark in",
+            "        \/\/ Some work to measure here",
+            "    }",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Writing-a-Benchmarks-with-custom-configuration",
+          "level" : 3,
+          "text" : "Writing a Benchmarks with custom configuration",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A more real test for a couple of Foundation features would be:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "import SystemPackage",
+            "import Foundation",
+            "import BenchmarkSupport",
+            "@main extension BenchmarkRunner {}",
+            "",
+            "@_dynamicReplacement(for: registerBenchmarks)",
+            "func benchmarks() {",
+            "    let customThreshold = BenchmarkResult.PercentileThresholds(",
+            "        relative: [.p50: 5.0, .p75: 10.0],",
+            "        absolute: [.p25: 10, .p50: 15])",
+            "    let customThreshold2 = BenchmarkResult.PercentileThresholds(",
+            "        relative: .strict)",
+            "    let customThreshold3 = BenchmarkResult.PercentileThresholds(",
+            "        absolute: .relaxed)",
+            "",
+            "    Benchmark.defaultConfiguration = .init(",
+            "        timeUnits: .microseconds,",
+            "        thresholds: [.wallClock: customThreshold,",
+            "                     .throughput: customThreshold2,",
+            "                     .cpuTotal: customThreshold3,",
+            "                     .cpuUser: .strict])",
+            "",
+            "    Benchmark(\"Foundation Date()\",",
+            "        configuration: .init(",
+            "            metrics: [.throughput, .wallClock], ",
+            "            scalingFactor: .mega)) { benchmark in",
+            "        for _ in benchmark.scaledIterations {",
+            "            blackHole(Date())",
+            "        }",
+            "    }",
+            "",
+            "    Benchmark(\"Foundation AttributedString()\") { benchmark in",
+            "        let count = 200",
+            "        var str = AttributedString(",
+            "            String(repeating: \"a\", count: count))",
+            "        str += AttributedString(",
+            "            String(repeating: \"b\", count: count))",
+            "        str += AttributedString(",
+            "            String(repeating: \"c\", count: count))",
+            "        let idx = str.characters.index(",
+            "            str.startIndex, ",
+            "            offsetBy: str.characters.count \/ 2)",
+            "        let toInsert = AttributedString(",
+            "            String(repeating: \"c\", count: str.characters.count))",
+            "",
+            "        benchmark.startMeasurement()",
+            "        str.insert(toInsert, at: idx)",
+            "    }",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " initializer includes options to allow you to tune how the benchmark should be run, as well as what metrics and thresholds should be captured.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "These benchmark options are applied through the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/configuration-swift.property",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " parameter.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "\/\/\/ Definition of a Benchmark",
+            "\/\/\/ - Parameters:",
+            "\/\/\/   - name: The name used for display purposes of the benchmark",
+            "\/\/\/     (also used for matching when comparing to baselines)",
+            "\/\/\/   - configuration: Defines the settings that should be used",
+            "\/\/\/     for this benchmark",
+            "\/\/\/   - closure: The actual benchmark closure that will be measured",
+            "@discardableResult",
+            "public init?(_ name: String,",
+            "    configuration: Benchmark.Configuration = Benchmark.defaultConfiguration,",
+            "    closure: @escaping BenchmarkClosure) {"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "And the benchmark configuration is defined in ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "public extension Benchmark {",
+            "    struct Configuration: Codable {",
+            "        \/\/\/ Defines the metrics that should be measured for the benchmark",
+            "        public var metrics: [BenchmarkMetric]",
+            "        \/\/\/ Override the automatic detection of timeunits for metrics ",
+            "        \/\/\/ related to time to a specific one ",
+            "        \/\/\/ (auto should work for most use cases)",
+            "        public var timeUnits: BenchmarkTimeUnits",
+            "        \/\/\/ Specifies a number of warmup iterations should be performed before   ",
+            "        \/\/\/ the measurement to reduce outliers due to e.g. cache population",
+            "        public var warmupIterations: Int",
+            "        \/\/\/ Specifies the number of logical subiterations being done, scaling ",
+            "        \/\/\/ throughput measurements accordingly.",
+            "        \/\/\/ E.g. `.kilo`will scale results with 1000. ",
+            "        \/\/\/ Any iteration done in the benchmark should use",
+            "        \/\/\/ `benchmark.scalingFactor.rawvalue` for ",
+            "        \/\/\/ the number of iterations.",
+            "        public var scalingFactor: StatisticsUnits",
+            "        \/\/\/ The target wall clock runtime for the benchmark. ",
+            "        \/\/\/ Defaults to `.seconds(1)` if not set.",
+            "        public var maxDuration: Duration",
+            "        \/\/\/ The target number of iterations for the benchmark.",
+            "        \/\/\/ Defaults to 100K iterations if not set.",
+            "        public var maxIterations: Int",
+            "        \/\/\/ Whether to skip this test (convenience for not ",
+            "        \/\/\/ having to comment out tests that have issues)",
+            "        public var skip = false",
+            "        \/\/\/ Customized CI failure thresholds for a given metric ",
+            "        \/\/\/ for the Benchmark",
+            "        public var thresholds: [BenchmarkMetric: BenchmarkResult.PercentileThresholds]?",
+            "..."
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "scalingFactor",
+          "level" : 3,
+          "text" : "scalingFactor",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For fast running (micro-)benchmarks, it is highly recommended to run measurements with an inner loop to ensure that the measurement overhead is small compared to the thing that is under measurement.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "To make this easy, Benchmark provides a ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/scalingFactor",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " in ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " which gives a convenience iterator range and supports scaled output on the command line using the ",
+              "type" : "text"
+            },
+            {
+              "code" : "--scale",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " flag.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "An example of using ",
+              "type" : "text"
+            },
+            {
+              "code" : "scalingFactor",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to run 1M inner loops:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "Benchmark(\"Foundation Date()\", configuration: .init(scalingFactor: .mega)) { benchmark in",
+            "    for _ in benchmark.scaledIterations {",
+            "        blackHole(Date())",
+            "    }",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Metrics",
+          "level" : 3,
+          "text" : "Metrics",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Benchmark supports a wide range of measurements defined by ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Benchmark provides a number of convenience methods for commonly useful sets of metrics, for example ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/memory",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " and - ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/all",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Metrics can also be specified explicitly, for example ",
+              "type" : "text"
+            },
+            {
+              "code" : "[.throughput, .wallClock]",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", or even by combining the default set with individual metrics.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Settings-defaults-for-all-benchmarks-within-a-suite",
+          "level" : 3,
+          "text" : "Settings defaults for all benchmarks within a suite",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Set the desired time units for all benchmarks within a suite easily by setting ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/timeUnits",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ":",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "@_dynamicReplacement(for: registerBenchmarks)",
+            "func benchmarks() {",
+            "",
+            "    Benchmark.defaultConfiguration.timeUnits = .nanoseconds",
+            "",
+            "    Benchmark(\"Foundation Date()\") {",
+            "        ...",
+            "    }"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Similar defaults can be set for all benchmark settings using the class variable that takes a standard ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ":",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "Benchmark.defaultConfiguration = .init(...)"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Custom-thresholds",
+          "level" : 3,
+          "text" : "Custom thresholds",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "let customThreshold = BenchmarkResult.PercentileThresholds(",
+            "    relative: [.p50 : 13.0, .p75 : 18.0],",
+            "    absolute: [.p50 : 170, .p75 : 1200])",
+            "",
+            "Benchmark(",
+            "    \"Foundation Date()\",",
+            "    configuration: .init(",
+            "    metrics: [.throughput, .wallClock],",
+            "    scalingFactor: .mega,",
+            "    thresholds: [",
+            "        .throughput : customThreshold,",
+            "        .wallClock : customThreshold])",
+            ") { benchmark in",
+            "    for _ in benchmark.scaledIterations {",
+            "        blackHole(Date())",
+            "    }",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "There are a number of convenience methods in ",
+              "type" : "text"
+            },
+            {
+              "code" : "BenchmarkResult+Defaults.swift",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Async-vs-Sync",
+          "level" : 3,
+          "text" : "Async vs Sync",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The framework supports both synchronous and asynchronous benchmark closures, it should transparently “just work”.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Notes-on-threading",
+          "level" : 3,
+          "text" : "Notes on threading",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The benchmark framework will use a couple of threads internally (one for sampling various statistics during the benchmark runtime, such as e.g. number of threads, another to facilitate async closures), so it is normal to see two extra threads or so when measuring - the sampling thread is currently running every 5ms and should not have measurable impact on most tests.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Debugging",
+          "level" : 3,
+          "text" : "Debugging",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The benchmark executables are set up to automatically run all tests when run standalone with simple debug output - this is to enable workflows where the benchmark is run in the Xcode debugger or with Instruments if desired - or with ",
+              "type" : "text"
+            },
+            {
+              "code" : "lldb",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " on the command line on Linux to support debugging in problematic performance tests.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Implementation-notes",
+          "level" : 3,
+          "text" : "Implementation notes",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The Benchmark SwiftPM plugins executes the ",
+              "type" : "text"
+            },
+            {
+              "code" : "BenchmarkTool",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " executable which is the benchmark driver.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "code" : "BenchmarkTool",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " in turns runs each executable target that is defined and uses JSON to communicate with the target process over pipes.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The executable benchmark targets just implements the actual benchmark tests, as much boilerplate code as possible has been hidden. The executable benchmark must depend on the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Benchmark",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " library target which also will pull in ",
+              "type" : "text"
+            },
+            {
+              "code" : "jemalloc",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " for malloc stats.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "code" : "@_dynamicReplacement(for:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " is used to hook in the benchmarks for the target, hopefully it will be an integrated supported part of Swift in the future.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/GettingStarted",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Metrics",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/RunningBenchmarks",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Workflows"
+      ],
+      "title" : "Essentials"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/benchmark\/writingbenchmarks"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark": {
+  "abstract" : [
+    {
+      "text" : "Defines a benchmark",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Benchmark"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Benchmark"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Benchmark",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct": {
+  "abstract" : [
+    {
+      "text" : "The configuration settings for running a benchmark.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Configuration"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Configuration"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Benchmark.Configuration",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct/scalingFactor": {
+  "abstract" : [
+    {
+      "text" : "Specifies the number of logical subiterations being done, supporting scaling of metricsi accordingly.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "E.g. ",
+      "type" : "text"
+    },
+    {
+      "code" : ".kilo",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : "will scale results with 1000. Any subiteration done in the benchmark should use",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "code" : "for _ in benchmark.scaledIterations",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " for the number of iterations.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "scalingFactor"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A13ScalingFactorO",
+      "text" : "BenchmarkScalingFactor"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/scalingFactor",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "scalingFactor",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/scalingfactor"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct/timeUnits": {
+  "abstract" : [
+    {
+      "text" : "Override the automatic detection of timeunits for metrics related to time to a specific",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "one (auto should work for most use cases)",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "timeUnits"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A9TimeUnitsO",
+      "text" : "BenchmarkTimeUnits"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/timeUnits",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "timeUnits",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct\/timeunits"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/configuration-swift.property": {
+  "abstract" : [
+    {
+      "text" : "The configuration to use for this benchmark",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "configuration"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9BenchmarkAAC",
+      "text" : "Benchmark"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9BenchmarkAAC13ConfigurationV",
+      "text" : "Configuration"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/configuration-swift.property",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "configuration",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.property"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric": {
+  "abstract" : [
+    {
+      "text" : "Metrics supported by benchmark.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkMetric"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkMetric"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BenchmarkMetric",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/all": {
+  "abstract" : [
+    {
+      "text" : "A collection of all benchmarks supported by this library.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "all"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+      "text" : "BenchmarkMetric"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/all",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "all",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/all"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric/memory": {
+  "abstract" : [
+    {
+      "text" : "A collection of memory benchmarks.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "memory"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A6MetricO",
+      "text" : "BenchmarkMetric"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/memory",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "memory",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric\/memory"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/GettingStarted": {
+  "abstract" : [
+    {
+      "text" : "Before creating your own benchmarks, you must install the required prerequisites and add a dependency on Benchmark to your package.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/GettingStarted",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Getting Started",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/gettingstarted"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Metrics": {
+  "abstract" : [
+    {
+      "text" : "Benchmarks supports a wide range of benchmark metrics and also allows you to create custom benchmark metrics.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Metrics",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Metrics and Thresholds",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/metrics"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/RunningBenchmarks": {
+  "abstract" : [
+    {
+      "text" : "Use the SwiftPM package plugin ",
+      "type" : "text"
+    },
+    {
+      "code" : "benchmark",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " to run your benchmarks",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/RunningBenchmarks",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Running Benchmarks",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/runningbenchmarks"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Workflows": {
+  "abstract" : [
+    {
+      "text" : "Benchmark supports local workflow patterns as well as CI integration to enforce benchmark performance.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Workflows",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Workflows",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/workflows"
+}
+}
+}
