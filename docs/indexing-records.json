@@ -3,17 +3,17 @@
     "headings" : [
 
     ],
-    "kind" : "article",
+    "kind" : "symbol",
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/Equatable-Implementations"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/mallocCountLarge"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "Equatable Implementations"
+    "rawIndexableTextContent" : "Number of large malloc calls ",
+    "summary" : "Number of large malloc calls",
+    "title" : "BenchmarkMetric.mallocCountLarge"
   },
   {
     "headings" : [
@@ -23,13 +23,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/configuration-swift.property"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/mallocCountTotal"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "The configuration to use for this benchmark ",
-    "summary" : "The configuration to use for this benchmark",
-    "title" : "configuration"
+    "rawIndexableTextContent" : "Number of small+large mallocs ",
+    "summary" : "Number of small+large mallocs",
+    "title" : "BenchmarkMetric.mallocCountTotal"
   },
   {
     "headings" : [
@@ -39,29 +39,93 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/currentIteration"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The current benchmark iteration (also includes warmup iterations), can be useful when e.g. unique keys will be needed for different iterations ",
-    "summary" : "The current benchmark iteration (also includes warmup iterations), can be useful when e.g. unique keys will be needed for different iterations",
-    "title" : "currentIteration"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/tera"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/microseconds"
       },
       "type" : "topLevelPage"
     },
     "rawIndexableTextContent" : " ",
     "summary" : "",
-    "title" : "BenchmarkScalingFactor.tera"
+    "title" : "BenchmarkTimeUnits.microseconds"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/RawRepresentable-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "RawRepresentable Implementations"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/!=(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
+    "summary" : "Inherited from Equatable.!=(_:_:).",
+    "title" : "!=(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/allocatedResidentMemory"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The amount of allocated resident memory according to the memory allocator by the application (does not include metadata overhead etc) ",
+    "summary" : "The amount of allocated resident memory according to the memory allocator by the application (does not include metadata overhead etc)",
+    "title" : "BenchmarkMetric.allocatedResidentMemory"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Time units for cpu\/wall clock time ",
+    "summary" : "Time units for cpu\/wall clock time",
+    "title" : "BenchmarkTimeUnits"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Polarity-swift.enum"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A constant that states whether larger or smaller measurements, relative to a set baseline, indicate better performance. ",
+    "summary" : "A constant that states whether larger or smaller measurements, relative to a set baseline, indicate better performance.",
+    "title" : "BenchmarkMetric.Polarity"
   },
   {
     "headings" : [
@@ -87,13 +151,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/init(from:)"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/tera"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Inherited from RawRepresentable.init(from:). ",
-    "summary" : "Inherited from RawRepresentable.init(from:).",
-    "title" : "init(from:)"
+    "rawIndexableTextContent" : "Scaling factor of 1e12. ",
+    "summary" : "Scaling factor of 1e12.",
+    "title" : "BenchmarkScalingFactor.tera"
   },
   {
     "headings" : [
@@ -103,93 +167,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/mallocCountLarge"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/init(rawValue:)"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Number of large malloc calls ",
-    "summary" : "Number of large malloc calls",
-    "title" : "BenchmarkMetric.mallocCountLarge"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/threadsRunning"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Sample the maximum number of threads actually running under the test (not exact) ",
-    "summary" : "Sample the maximum number of threads actually running under the test (not exact)",
-    "title" : "BenchmarkMetric.threadsRunning"
-  },
-  {
-    "headings" : [
-      "Overview"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Metrics supported by benchmark.  Overview Some metrics are only available on macOS or Linux, but you can specify all the metrics without worrying about platform availability. If a metric is unavailable on a specific platform, the Benchmark system filters unsupported metrics out as needed.",
-    "summary" : "Metrics supported by benchmark.",
-    "title" : "BenchmarkMetric"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Polarity-swift.enum\/init(from:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Decodable.init(from:). ",
-    "summary" : "Inherited from Decodable.init(from:).",
-    "title" : "init(from:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/readSyscalls"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The number of I\/O read syscalls performed e.g. read(2) \/ pread(2) – Linux only ",
-    "summary" : "The number of I\/O read syscalls performed e.g. read(2) \/ pread(2) – Linux only",
-    "title" : "BenchmarkMetric.readSyscalls"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/!=(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
-    "summary" : "Inherited from Equatable.!=(_:_:).",
-    "title" : "!=(_:_:)"
+    "rawIndexableTextContent" : "Inherited from RawRepresentable.init(rawValue:). ",
+    "summary" : "Inherited from RawRepresentable.init(rawValue:).",
+    "title" : "init(rawValue:)"
   },
   {
     "headings" : [
@@ -212,27 +196,19 @@
   },
   {
     "headings" : [
-      "Overview",
-      "Installing Prerequisites and Platform Support",
-      "Installing `jemalloc` on macOS",
-      "Installing `jemalloc` on Ubuntu",
-      "Installing `jemalloc` on Amazon Linux 2",
-      "Adding dependencies",
-      "Add benchmark exectuable targets",
-      "Dedicated GitHub runner instances",
-      "Sample Project"
+
     ],
-    "kind" : "article",
+    "kind" : "symbol",
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/GettingStarted"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/syscalls"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Before creating your own benchmarks, you must install the required prerequisites and add a dependency on Benchmark to your package. Overview There are three steps that needs to be performed to get up and running with your own benchmarks: Install prerequisite dependencies if needed (currently only jemalloc) Add a dependency on Benchmark to your Package.swift file Add one or more benchmark executable targets to the top level Benchmarks\/ directory for auto discovery After having done those, running your benchmarks are as simple as running swift package benchmark. Installing Prerequisites and Platform Support Benchmark requires Swift 5.7 support as it uses Regex and Duration types introduced with the macOS 13 runtime, most versions of Linux will work as long as Swift 5.7+ is used. Benchmark also depends and needs the jemalloc memory allocation library, which is used by the Benchmark infrastructure to capture memory allocation statistics, as jemalloc provides a rich programmatic API for extracting memory allocation statistics at runtime. The Benchmark package requires you to install jemalloc on any machine used for benchmarking. If you want to avoid adding the jemalloc dependency to your project, the recommended approach is to embed a separate Swift project in a subdirectory that uses your project, then the dependency on jemalloc is contained to that subproject only. Installing `jemalloc` on macOS  Installing `jemalloc` on Ubuntu  Installing `jemalloc` on Amazon Linux 2 For Amazon Linux 2 users have reported that the following works: Docker file configuration  make install installs the libraries in \/usr\/local\/lib, which the plugin can’t find, so you also have to do:  Alternatively:  Adding dependencies To add the dependency on Benchmark, add a dependency to your package:  Add benchmark exectuable targets Create an executable target in Package.swift for each benchmark suite you want to measure. The source for all benchmarks must reside in a directory named Benchmarks in the root of your swift package. The benchmark plugin uses this directory combined with the executable target information to automatically discover and run your benchmarks. For each executable target, include a dependency on BenchmarkSupport from package-benchmark. The following example shows an benchmark suite named My-Benchmark with the required dependency on BenchmarkSupport and the source files for the benchmark that reside in the directory Benchmarks\/My-Benchmark:  Dedicated GitHub runner instances For reproducible and good comparable results, it is highly recommended to set up a private GitHub runner that is completely dedicated for performance benchmark runs, as the standard GitHub CI runners are deployed on a shared infrastructure the deviations between runs can be significant and difficult to assess. Sample Project There’s a sample project showing usage of the basic API which can be a good starting point if you want to look at how a project can be setup.",
-    "summary" : "Before creating your own benchmarks, you must install the required prerequisites and add a dependency on Benchmark to your package.",
-    "title" : "Getting Started"
+    "rawIndexableTextContent" : "Measure number of syscalls made during the test ",
+    "summary" : "Measure number of syscalls made during the test",
+    "title" : "BenchmarkMetric.syscalls"
   },
   {
     "headings" : [
@@ -242,29 +218,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/init(rawValue:)"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/threads"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Inherited from RawRepresentable.init(rawValue:). ",
-    "summary" : "Inherited from RawRepresentable.init(rawValue:).",
-    "title" : "init(rawValue:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/divisor"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Divisor of raw data to the desired time unit representation ",
-    "summary" : "Divisor of raw data to the desired time unit representation",
-    "title" : "divisor"
+    "rawIndexableTextContent" : "Sample the maximum number of threads in the process under the test (not exact) ",
+    "summary" : "Sample the maximum number of threads in the process under the test (not exact)",
+    "title" : "BenchmarkMetric.threads"
   },
   {
     "headings" : [
@@ -274,7 +234,7 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Equatable-Implementations"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Polarity-swift.enum\/Equatable-Implementations"
       },
       "type" : "topLevelPage"
     },
@@ -290,29 +250,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/maxDuration"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The maximum wall clock runtime for the benchmark, currenty defaults to .seconds(1) if not set ",
-    "summary" : "The maximum wall clock runtime for the benchmark, currenty defaults to .seconds(1) if not set",
-    "title" : "maxDuration"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/microseconds"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/init(_:)"
       },
       "type" : "topLevelPage"
     },
     "rawIndexableTextContent" : " ",
     "summary" : "",
-    "title" : "BenchmarkTimeUnits.microseconds"
+    "title" : "init(_:)"
   },
   {
     "headings" : [
@@ -338,13 +282,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/metrics"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/memoryLeaked"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Defines the metrics that should be measured for the benchmark ",
-    "summary" : "Defines the metrics that should be measured for the benchmark",
-    "title" : "metrics"
+    "rawIndexableTextContent" : "Number of small+large mallocs - small+large frees in resident memory ",
+    "summary" : "Number of small+large mallocs - small+large frees in resident memory",
+    "title" : "BenchmarkMetric.memoryLeaked"
   },
   {
     "headings" : [
@@ -354,125 +298,29 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/hash(into:)"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Polarity-swift.enum\/!=(_:_:)"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Inherited from RawRepresentable.hash(into:). ",
-    "summary" : "Inherited from RawRepresentable.hash(into:).",
-    "title" : "hash(into:)"
+    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
+    "summary" : "Inherited from Equatable.!=(_:_:).",
+    "title" : "!=(_:_:)"
   },
   {
     "headings" : [
-
+      "Discussion"
     ],
     "kind" : "symbol",
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/writeSyscalls"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/registerBenchmarks()"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "The number of I\/O write syscalls performed e.g. write(2) \/ pwrite(2) – Linux only ",
-    "summary" : "The number of I\/O write syscalls performed e.g. write(2) \/ pwrite(2) – Linux only",
-    "title" : "BenchmarkMetric.writeSyscalls"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Polarity-swift.enum\/prefersLarger"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A performance measurement where a larger value, relative to a set baseline, indicates better performance. ",
-    "summary" : "A performance measurement where a larger value, relative to a set baseline, indicates better performance.",
-    "title" : "BenchmarkMetric.Polarity.prefersLarger"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/contextSwitches"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Measure number of context switches made during the test ",
-    "summary" : "Measure number of context switches made during the test",
-    "title" : "BenchmarkMetric.contextSwitches"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/wallClock"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Wall clock time for running the test ",
-    "summary" : "Wall clock time for running the test",
-    "title" : "BenchmarkMetric.wallClock"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/init(_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "init(_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/encode(to:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from RawRepresentable.encode(to:). ",
-    "summary" : "Inherited from RawRepresentable.encode(to:).",
-    "title" : "encode(to:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/failureReason"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The reason for a benchmark failure, not set if successful ",
-    "summary" : "The reason for a benchmark failure, not set if successful",
-    "title" : "failureReason"
+    "rawIndexableTextContent" : "The entry point for defining benchmarks, expected to be overridden by benchmarks you write.  Discussion Annotate a function that returns your benchmarks with @_dynamicReplacement(for: registerBenchmarks) to override this function. The following code shows a minimal benchmark structure. ",
+    "summary" : "The entry point for defining benchmarks, expected to be overridden by benchmarks you write.",
+    "title" : "registerBenchmarks()"
   },
   {
     "headings" : [
@@ -498,29 +346,461 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/giga"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/nanoseconds"
       },
       "type" : "topLevelPage"
     },
     "rawIndexableTextContent" : " ",
     "summary" : "",
-    "title" : "BenchmarkScalingFactor.giga"
+    "title" : "BenchmarkTimeUnits.nanoseconds"
   },
   {
     "headings" : [
-      "Discussion"
+
     ],
     "kind" : "symbol",
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/default"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/automatic"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "The default collection of metrics used for a benchmark.  Discussion The defaults include BenchmarkMetric.wallClock, BenchmarkMetric.cpuTotal, BenchmarkMetric.mallocCountTotal, BenchmarkMetric.throughput, and BenchmarkMetric.peakMemoryResident.",
-    "summary" : "The default collection of metrics used for a benchmark.",
-    "title" : "default"
+    "rawIndexableTextContent" : " ",
+    "summary" : "",
+    "title" : "BenchmarkTimeUnits.automatic"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/metrics"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Defines the metrics that should be measured for the benchmark ",
+    "summary" : "Defines the metrics that should be measured for the benchmark",
+    "title" : "metrics"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/configuration-swift.property"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The configuration to use for this benchmark ",
+    "summary" : "The configuration to use for this benchmark",
+    "title" : "configuration"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/peakMemoryVirtual"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Measure virtual memory usage - sampled during runtime ",
+    "summary" : "Measure virtual memory usage - sampled during runtime",
+    "title" : "BenchmarkMetric.peakMemoryVirtual"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/init(metrics:timeUnits:warmupIterations:scalingFactor:maxDuration:maxIterations:skip:thresholds:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : " ",
+    "summary" : "",
+    "title" : "init(metrics:timeUnits:warmupIterations:scalingFactor:maxDuration:maxIterations:skip:thresholds:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/name"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The name used for display purposes of the benchmark (also used for matching when comparing to baselines) ",
+    "summary" : "The name used for display purposes of the benchmark (also used for matching when comparing to baselines)",
+    "title" : "name"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/divisor"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Divisor of raw data to the desired time unit representation ",
+    "summary" : "Divisor of raw data to the desired time unit representation",
+    "title" : "divisor"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Polarity-swift.enum\/prefersLarger"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A performance measurement where a larger value, relative to a set baseline, indicates better performance. ",
+    "summary" : "A performance measurement where a larger value, relative to a set baseline, indicates better performance.",
+    "title" : "BenchmarkMetric.Polarity.prefersLarger"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/writeBytesPhysical"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The number of bytes physicall written to a block device (i.e. disk) – Linux only ",
+    "summary" : "The number of bytes physicall written to a block device (i.e. disk) – Linux only",
+    "title" : "BenchmarkMetric.writeBytesPhysical"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Polarity-swift.enum\/prefersSmaller"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A performance measurement where a smaller value, relative to a set baseline, indicates better performance. ",
+    "summary" : "A performance measurement where a smaller value, relative to a set baseline, indicates better performance.",
+    "title" : "BenchmarkMetric.Polarity.prefersSmaller"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/RawRepresentable-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "RawRepresentable Implementations"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/failureReason"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The reason for a benchmark failure, not set if successful ",
+    "summary" : "The reason for a benchmark failure, not set if successful",
+    "title" : "failureReason"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/giga"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Scaling factor of 1e09. ",
+    "summary" : "Scaling factor of 1e09.",
+    "title" : "BenchmarkScalingFactor.giga"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/encode(to:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from RawRepresentable.encode(to:). ",
+    "summary" : "Inherited from RawRepresentable.encode(to:).",
+    "title" : "encode(to:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/useScalingFactor"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "True if this metric should be scaled to the scalingFactor if looking at scaled output. ",
+    "summary" : "True if this metric should be scaled to the scalingFactor if looking at scaled output.",
+    "title" : "useScalingFactor"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/readSyscalls"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The number of I\/O read syscalls performed e.g. read(2) \/ pread(2) – Linux only ",
+    "summary" : "The number of I\/O read syscalls performed e.g. read(2) \/ pread(2) – Linux only",
+    "title" : "BenchmarkMetric.readSyscalls"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Polarity-swift.enum\/init(from:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Decodable.init(from:). ",
+    "summary" : "Inherited from Decodable.init(from:).",
+    "title" : "init(from:)"
+  },
+  {
+    "headings" : [
+      "Overview"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Metrics supported by benchmark.  Overview Some metrics are only available on macOS or Linux, but you can specify all the metrics without worrying about platform availability. If a metric is unavailable on a specific platform, the Benchmark system filters unsupported metrics out as needed.",
+    "summary" : "Metrics supported by benchmark.",
+    "title" : "BenchmarkMetric"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/disk"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A collection of disk benchmarks. ",
+    "summary" : "A collection of disk benchmarks.",
+    "title" : "disk"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Equatable-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "Equatable Implementations"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/init(from:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Decodable.init(from:). ",
+    "summary" : "Inherited from Decodable.init(from:).",
+    "title" : "init(from:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/description"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from CustomStringConvertible.description. ",
+    "summary" : "Inherited from CustomStringConvertible.description.",
+    "title" : "description"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/startMeasurement()"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "If the benchmark contains a preamble setup that should not be part of the measurement startMeasurement can be called explicitly to define when measurement should begin. Otherwise the whole benchmark will be measured. ",
+    "summary" : "If the benchmark contains a preamble setup that should not be part of the measurement startMeasurement can be called explicitly to define when measurement should begin. Otherwise the whole benchmark will be measured.",
+    "title" : "startMeasurement()"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/hashValue"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from RawRepresentable.hashValue. ",
+    "summary" : "Inherited from RawRepresentable.hashValue.",
+    "title" : "hashValue"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/init(from:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Decodable.init(from:). ",
+    "summary" : "Inherited from Decodable.init(from:).",
+    "title" : "init(from:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/customMetricMeasurement"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : " ",
+    "summary" : "",
+    "title" : "customMetricMeasurement"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/Equatable-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "Equatable Implementations"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/defaultConfiguration"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Hook for setting defaults for a whole benchmark suite ",
+    "summary" : "Hook for setting defaults for a whole benchmark suite",
+    "title" : "defaultConfiguration"
   },
   {
     "headings" : [
@@ -555,13 +835,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/threadsRunning"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Time units for cpu\/wall clock time ",
-    "summary" : "Time units for cpu\/wall clock time",
-    "title" : "BenchmarkTimeUnits"
+    "rawIndexableTextContent" : "Sample the maximum number of threads actually running under the test (not exact) ",
+    "summary" : "Sample the maximum number of threads actually running under the test (not exact)",
+    "title" : "BenchmarkMetric.threadsRunning"
   },
   {
     "headings" : [
@@ -571,13 +851,29 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuUser"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/wallClock"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "CPU user space time spent for running the test ",
-    "summary" : "CPU user space time spent for running the test",
-    "title" : "BenchmarkMetric.cpuUser"
+    "rawIndexableTextContent" : "Wall clock time for running the test ",
+    "summary" : "Wall clock time for running the test",
+    "title" : "BenchmarkMetric.wallClock"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/default"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The default collection of metrics used for a benchmark.  Discussion The defaults include BenchmarkMetric.wallClock, BenchmarkMetric.cpuTotal, BenchmarkMetric.mallocCountTotal, BenchmarkMetric.throughput, and BenchmarkMetric.peakMemoryResident.",
+    "summary" : "The default collection of metrics used for a benchmark.",
+    "title" : "default"
   },
   {
     "headings" : [
@@ -587,13 +883,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/measurement(_:_:)"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "measurement registers custom metric measurements  A .custom() metric to register a value for The value to register for the metric.",
-    "summary" : "measurement registers custom metric measurements",
-    "title" : "measurement(_:_:)"
+    "rawIndexableTextContent" : "Defines a benchmark ",
+    "summary" : "Defines a benchmark",
+    "title" : "Benchmark"
   },
   {
     "headings" : [
@@ -603,13 +899,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/init(from:)"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/stopMeasurement()"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Inherited from Decodable.init(from:). ",
-    "summary" : "Inherited from Decodable.init(from:).",
-    "title" : "init(from:)"
+    "rawIndexableTextContent" : "If the benchmark contains a postample that should not be part of the measurement startMeasurement can be called explicitly to define when measurement should begin. Otherwise the whole benchmark will be measured. ",
+    "summary" : "If the benchmark contains a postample that should not be part of the measurement startMeasurement can be called explicitly to define when measurement should begin. Otherwise the whole benchmark will be measured.",
+    "title" : "stopMeasurement()"
   },
   {
     "headings" : [
@@ -619,29 +915,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/skip"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/init(_:configuration:closure:)-5ra7m"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Whether to skip this test (convenience for not having to comment out tests that have issues) ",
-    "summary" : "Whether to skip this test (convenience for not having to comment out tests that have issues)",
-    "title" : "skip"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/warmupIterations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Specifies a number of warmup iterations should be performed before the measurement to reduce outliers due to e.g. cache population ",
-    "summary" : "Specifies a number of warmup iterations should be performed before the measurement to reduce outliers due to e.g. cache population",
-    "title" : "warmupIterations"
+    "rawIndexableTextContent" : "Definition of a Benchmark  The name used for display purposes of the benchmark (also used for matching when comparing to baselines) Defines the settings that should be used for this benchmark The actual benchmark closure that will be measured",
+    "summary" : "Definition of a Benchmark",
+    "title" : "init(_:configuration:closure:)"
   },
   {
     "headings" : [
@@ -667,461 +947,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/hash(into:)"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Inherited from RawRepresentable.hash(into:). ",
-    "summary" : "Inherited from RawRepresentable.hash(into:).",
-    "title" : "hash(into:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/memory"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A collection of memory benchmarks. ",
-    "summary" : "A collection of memory benchmarks.",
-    "title" : "memory"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/RawRepresentable-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "RawRepresentable Implementations"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/Equatable-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "Equatable Implementations"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/RawRepresentable-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "RawRepresentable Implementations"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/syscalls"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Measure number of syscalls made during the test ",
-    "summary" : "Measure number of syscalls made during the test",
-    "title" : "BenchmarkMetric.syscalls"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/disk"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A collection of disk benchmarks. ",
-    "summary" : "A collection of disk benchmarks.",
-    "title" : "disk"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/scaledIterations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Convenience range to iterate over for benchmarks ",
-    "summary" : "Convenience range to iterate over for benchmarks",
-    "title" : "scaledIterations"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/threads"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Sample the maximum number of threads in the process under the test (not exact) ",
-    "summary" : "Sample the maximum number of threads in the process under the test (not exact)",
-    "title" : "BenchmarkMetric.threads"
-  },
-  {
-    "headings" : [
-      "Overview"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux. Overview Performance is a key feature for many apps and frameworks. Benchmark helps make it easy to measure and track many different metrics that affects performance, such as CPU usage, memory usage and use of operating system resources such as threads and system calls. Benchmark supports several key workflows for performance measurements, e.g.: Automated Pull Request performance regression checks by comparing the performance metrics of a pull request with the main branch and having the PR check fail if there is a regression (e.g. no added memory allocations, or that the runtime was at least as good) with ready to use workflows for GitHub CI Manual comparison of multiple performance baselines for iterative or A\/B performance work by an individual developer Export of benchmark results in several formats such as JMH (Java Microbenchmark Harness), TSV (tab-separated-values), HDR Histogram (analysis), etc. This allows for tracking performance over time or analyzing\/visualizing with other tools such as JMH visualizer, Gnuplot, YouPlot, HDR Histogram analyzer and more. Benchmark provides a quick way for validation of performance metrics, while other more specialized tools such as Instruments, DTrace, Heaptrack, Leaks, Sample and more can be used for finding root causes for any deviations found. Benchmark is suitable for both smaller ad-hoc benchmarks only caring about runtime (in the spirit of Google’s swift-benchmark) and more extensive benchmarks that care about additional metrics such as memory allocations, syscalls, thread usage and more. Thanks to the HDR Histogram foundation it’s especially suitable for capturing latency statistics for large number of samples. The default text output from Benchmark is oriented around the five-number summary percentiles, plus p90 and p99. We’ve found that focusing on percentiles rather than average or standard deviations as is common, is more useful for a wider range of benchmark measurements and allow for a consistent way of expressing benchmark results and CI thresholds deviations looking at both throughput and latency measurements (which typically do not have a standardized distribution and almost always are multi-modal in nature). That being said, some of the export formats do include more traditional average\/stddev type of values and the Benchmark infrastructure actually captures all samples for a test run, so there are even export functionality for all the raw data points for arbitrary post-run statistical analysis as desired.",
-    "summary" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
-    "title" : "Benchmark"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/system"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A collection of system benchmarks. ",
-    "summary" : "A collection of system benchmarks.",
-    "title" : "system"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/maxIterations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The maximum number of iterations for the benchmark., currently defaults to 10K iterations if not set ",
-    "summary" : "The maximum number of iterations for the benchmark., currently defaults to 10K iterations if not set",
-    "title" : "maxIterations"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/!=(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
-    "summary" : "Inherited from Equatable.!=(_:_:).",
-    "title" : "!=(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Equatable-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "Equatable Implementations"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/init(from:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Decodable.init(from:). ",
-    "summary" : "Inherited from Decodable.init(from:).",
-    "title" : "init(from:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/!=(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
-    "summary" : "Inherited from Equatable.!=(_:_:).",
-    "title" : "!=(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/encode(to:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from RawRepresentable.encode(to:). ",
-    "summary" : "Inherited from RawRepresentable.encode(to:).",
-    "title" : "encode(to:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuTotal"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "CPU total time spent for running the test (system + user) ",
-    "summary" : "CPU total time spent for running the test (system + user)",
-    "title" : "BenchmarkMetric.cpuTotal"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/name"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The name used for display purposes of the benchmark (also used for matching when comparing to baselines) ",
-    "summary" : "The name used for display purposes of the benchmark (also used for matching when comparing to baselines)",
-    "title" : "name"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/blackHole(_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A function to foil compiler optimizations that would otherwise optimize out code you want to benchmark.  Discussion The function wraps another object or function, does nothing, and returns. If you want to benchmark the time is takes to create an instance and you don’t maintain a reference to it, the compiler may optimize it out entirely, thinking it is unused. To prevent the compiler from removing the code you want to measure, wrap the creation of the instance with blackHole. For example, the following code benchmarks the time it takes to create an instance of Date, and wraps the creation of the instance to prevent the compiler from optimizing it away: ",
-    "summary" : "A function to foil compiler optimizations that would otherwise optimize out code you want to benchmark.",
-    "title" : "blackHole(_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/init(_:configuration:closure:)-699lk"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Definition of a Benchmark  The name used for display purposes of the benchmark (also used for matching when comparing to baselines) Defines the settings that should be used for this benchmark The actual async benchmark closure that will be measured",
-    "summary" : "Definition of a Benchmark",
-    "title" : "init(_:configuration:closure:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Polarity-swift.enum\/prefersSmaller"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A performance measurement where a smaller value, relative to a set baseline, indicates better performance. ",
-    "summary" : "A performance measurement where a smaller value, relative to a set baseline, indicates better performance.",
-    "title" : "BenchmarkMetric.Polarity.prefersSmaller"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/CustomStringConvertible-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "CustomStringConvertible Implementations"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Polarity-swift.enum"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A constant that states whether larger or smaller measurements, relative to a set baseline, indicate better performance. ",
-    "summary" : "A constant that states whether larger or smaller measurements, relative to a set baseline, indicate better performance.",
-    "title" : "BenchmarkMetric.Polarity"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/custom(_:polarity:useScalingFactor:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Custom metric ",
-    "summary" : "Custom metric",
-    "title" : "BenchmarkMetric.custom(_:polarity:useScalingFactor:)"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/registerBenchmarks()"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The entry point for defining benchmarks, expected to be overridden by benchmarks you write.  Discussion Annotate a function that returns your benchmarks with @_dynamicReplacement(for: registerBenchmarks) to override this function. The following code shows a minimal benchmark structure. ",
-    "summary" : "The entry point for defining benchmarks, expected to be overridden by benchmarks you write.",
-    "title" : "registerBenchmarks()"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/defaultConfiguration"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Hook for setting defaults for a whole benchmark suite ",
-    "summary" : "Hook for setting defaults for a whole benchmark suite",
-    "title" : "defaultConfiguration"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/timeUnits"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Override the automatic detection of timeunits for metrics related to time to a specific one (auto should work for most use cases) ",
-    "summary" : "Override the automatic detection of timeunits for metrics related to time to a specific one (auto should work for most use cases)",
-    "title" : "timeUnits"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/stopMeasurement()"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "If the benchmark contains a postample that should not be part of the measurement startMeasurement can be called explicitly to define when measurement should begin. Otherwise the whole benchmark will be measured. ",
-    "summary" : "If the benchmark contains a postample that should not be part of the measurement startMeasurement can be called explicitly to define when measurement should begin. Otherwise the whole benchmark will be measured.",
-    "title" : "stopMeasurement()"
+    "rawIndexableTextContent" : "The configuration settings for running a benchmark. ",
+    "summary" : "The configuration settings for running a benchmark.",
+    "title" : "Benchmark.Configuration"
   },
   {
     "headings" : [
@@ -1149,13 +981,77 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/all"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/countable"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "A collection of all benchmarks supported by this library. ",
-    "summary" : "A collection of all benchmarks supported by this library.",
-    "title" : "all"
+    "rawIndexableTextContent" : " ",
+    "summary" : "",
+    "title" : "countable"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/memory"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A collection of memory benchmarks. ",
+    "summary" : "A collection of memory benchmarks.",
+    "title" : "memory"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/Equatable-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "Equatable Implementations"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/hash(into:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from RawRepresentable.hash(into:). ",
+    "summary" : "Inherited from RawRepresentable.hash(into:).",
+    "title" : "hash(into:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/currentIteration"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The current benchmark iteration (also includes warmup iterations), can be useful when e.g. unique keys will be needed for different iterations ",
+    "summary" : "The current benchmark iteration (also includes warmup iterations), can be useful when e.g. unique keys will be needed for different iterations",
+    "title" : "currentIteration"
   },
   {
     "headings" : [
@@ -1181,70 +1077,6 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/nanoseconds"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "BenchmarkTimeUnits.nanoseconds"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/readBytesPhysical"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The number of bytes physically read from a block device (i.e. disk) – Linux only ",
-    "summary" : "The number of bytes physically read from a block device (i.e. disk) – Linux only",
-    "title" : "BenchmarkMetric.readBytesPhysical"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/writeBytesPhysical"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The number of bytes physicall written to a block device (i.e. disk) – Linux only ",
-    "summary" : "The number of bytes physicall written to a block device (i.e. disk) – Linux only",
-    "title" : "BenchmarkMetric.writeBytesPhysical"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/allocatedResidentMemory"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The amount of allocated resident memory according to the memory allocator by the application (does not include metadata overhead etc) ",
-    "summary" : "The amount of allocated resident memory according to the memory allocator by the application (does not include metadata overhead etc)",
-    "title" : "BenchmarkMetric.allocatedResidentMemory"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
         "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/error(_:)"
       },
       "type" : "topLevelPage"
@@ -1261,13 +1093,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/mega"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/system"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "BenchmarkScalingFactor.mega"
+    "rawIndexableTextContent" : "A collection of system benchmarks. ",
+    "summary" : "A collection of system benchmarks.",
+    "title" : "system"
   },
   {
     "headings" : [
@@ -1277,157 +1109,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/peakMemoryResident"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/!=(_:_:)"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Measure resident memory usage - sampled during runtime ",
-    "summary" : "Measure resident memory usage - sampled during runtime",
-    "title" : "BenchmarkMetric.peakMemoryResident"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "BenchmarkScalingFactor"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/startMeasurement()"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "If the benchmark contains a preamble setup that should not be part of the measurement startMeasurement can be called explicitly to define when measurement should begin. Otherwise the whole benchmark will be measured. ",
-    "summary" : "If the benchmark contains a preamble setup that should not be part of the measurement startMeasurement can be called explicitly to define when measurement should begin. Otherwise the whole benchmark will be measured.",
-    "title" : "startMeasurement()"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/thresholds"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Customized CI failure thresholds for a given metric for the Benchmark ",
-    "summary" : "Customized CI failure thresholds for a given metric for the Benchmark",
-    "title" : "thresholds"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/init(_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "init(_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/mallocCountTotal"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Number of small+large mallocs ",
-    "summary" : "Number of small+large mallocs",
-    "title" : "BenchmarkMetric.mallocCountTotal"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/seconds"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "BenchmarkTimeUnits.seconds"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuSystem"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "CPU system time spent for running the test ",
-    "summary" : "CPU system time spent for running the test",
-    "title" : "BenchmarkMetric.cpuSystem"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/kilo"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "BenchmarkScalingFactor.kilo"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/countable"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "countable"
+    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
+    "summary" : "Inherited from Equatable.!=(_:_:).",
+    "title" : "!=(_:_:)"
   },
   {
     "headings" : [
@@ -1453,13 +1141,77 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/one"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/thresholds"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Customized CI failure thresholds for a given metric for the Benchmark ",
+    "summary" : "Customized CI failure thresholds for a given metric for the Benchmark",
+    "title" : "thresholds"
+  },
+  {
+    "headings" : [
+      "Overview"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux. Overview Performance is a key feature for many apps and frameworks. Benchmark helps make it easy to measure and track many different metrics that affects performance, such as CPU usage, memory usage and use of operating system resources such as threads and system calls. Benchmark supports several key workflows for performance measurements, e.g.: Automated Pull Request performance regression checks by comparing the performance metrics of a pull request with the main branch and having the PR check fail if there is a regression (e.g. no added memory allocations, or that the runtime was at least as good) with ready to use workflows for GitHub CI Manual comparison of multiple performance baselines for iterative or A\/B performance work by an individual developer Export of benchmark results in several formats such as JMH (Java Microbenchmark Harness), TSV (tab-separated-values), HDR Histogram (analysis), etc. This allows for tracking performance over time or analyzing\/visualizing with other tools such as JMH visualizer, Gnuplot, YouPlot, HDR Histogram analyzer and more. Benchmark provides a quick way for validation of performance metrics, while other more specialized tools such as Instruments, DTrace, Heaptrack, Leaks, Sample and more can be used for finding root causes for any deviations found. Benchmark is suitable for both smaller ad-hoc benchmarks only caring about runtime (in the spirit of Google’s swift-benchmark) and more extensive benchmarks that care about additional metrics such as memory allocations, syscalls, thread usage and more. Thanks to the HDR Histogram foundation it’s especially suitable for capturing latency statistics for large number of samples. The default text output from Benchmark is oriented around the five-number summary percentiles, plus p90 and p99. We’ve found that focusing on percentiles rather than average or standard deviations as is common, is more useful for a wider range of benchmark measurements and allow for a consistent way of expressing benchmark results and CI thresholds deviations looking at both throughput and latency measurements (which typically do not have a standardized distribution and almost always are multi-modal in nature). That being said, some of the export formats do include more traditional average\/stddev type of values and the Benchmark infrastructure actually captures all samples for a test run, so there are even export functionality for all the raw data points for arbitrary post-run statistical analysis as desired.",
+    "summary" : "Benchmark is a harness for easily creating Swift performance benchmarks for both macOS and Linux.",
+    "title" : "Benchmark"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/maxIterations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The maximum number of iterations for the benchmark., currently defaults to 10K iterations if not set ",
+    "summary" : "The maximum number of iterations for the benchmark., currently defaults to 10K iterations if not set",
+    "title" : "maxIterations"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/init(rawValue:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from RawRepresentable.init(rawValue:). ",
+    "summary" : "Inherited from RawRepresentable.init(rawValue:).",
+    "title" : "init(rawValue:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/seconds"
       },
       "type" : "topLevelPage"
     },
     "rawIndexableTextContent" : " ",
     "summary" : "",
-    "title" : "BenchmarkScalingFactor.one"
+    "title" : "BenchmarkTimeUnits.seconds"
   },
   {
     "headings" : [
@@ -1469,77 +1221,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Polarity-swift.enum\/!=(_:_:)"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/encode(to:)"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
-    "summary" : "Inherited from Equatable.!=(_:_:).",
-    "title" : "!=(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/description"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "description"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The configuration settings for running a benchmark. ",
-    "summary" : "The configuration settings for running a benchmark.",
-    "title" : "Benchmark.Configuration"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/init(_:configuration:closure:)-5ra7m"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Definition of a Benchmark  The name used for display purposes of the benchmark (also used for matching when comparing to baselines) Defines the settings that should be used for this benchmark The actual benchmark closure that will be measured",
-    "summary" : "Definition of a Benchmark",
-    "title" : "init(_:configuration:closure:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Polarity-swift.enum\/Equatable-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "Equatable Implementations"
+    "rawIndexableTextContent" : "Inherited from RawRepresentable.encode(to:). ",
+    "summary" : "Inherited from RawRepresentable.encode(to:).",
+    "title" : "encode(to:)"
   },
   {
     "headings" : [
@@ -1565,13 +1253,93 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/readBytesLogical"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/measurement(_:_:)"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "The number of bytes read from storage (but may be satisfied by pagecache!) – Linux only ",
-    "summary" : "The number of bytes read from storage (but may be satisfied by pagecache!) – Linux only",
-    "title" : "BenchmarkMetric.readBytesLogical"
+    "rawIndexableTextContent" : "measurement registers custom metric measurements  A .custom() metric to register a value for The value to register for the metric.",
+    "summary" : "measurement registers custom metric measurements",
+    "title" : "measurement(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/Equatable-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "Equatable Implementations"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/writeSyscalls"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The number of I\/O write syscalls performed e.g. write(2) \/ pwrite(2) – Linux only ",
+    "summary" : "The number of I\/O write syscalls performed e.g. write(2) \/ pwrite(2) – Linux only",
+    "title" : "BenchmarkMetric.writeSyscalls"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/!=(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
+    "summary" : "Inherited from Equatable.!=(_:_:).",
+    "title" : "!=(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuSystem"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "CPU system time spent for running the test ",
+    "summary" : "CPU system time spent for running the test",
+    "title" : "BenchmarkMetric.cpuSystem"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/one"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "No scaling factor, the raw count of iterations. ",
+    "summary" : "No scaling factor, the raw count of iterations.",
+    "title" : "BenchmarkScalingFactor.one"
   },
   {
     "headings" : [
@@ -1597,13 +1365,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/hashValue"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/peakMemoryResident"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Inherited from RawRepresentable.hashValue. ",
-    "summary" : "Inherited from RawRepresentable.hashValue.",
-    "title" : "hashValue"
+    "rawIndexableTextContent" : "Measure resident memory usage - sampled during runtime ",
+    "summary" : "Measure resident memory usage - sampled during runtime",
+    "title" : "BenchmarkMetric.peakMemoryResident"
   },
   {
     "headings" : [
@@ -1613,29 +1381,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/description"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from CustomStringConvertible.description. ",
-    "summary" : "Inherited from CustomStringConvertible.description.",
-    "title" : "description"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/init(metrics:timeUnits:warmupIterations:scalingFactor:maxDuration:maxIterations:skip:thresholds:)"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/init(_:)"
       },
       "type" : "topLevelPage"
     },
     "rawIndexableTextContent" : " ",
     "summary" : "",
-    "title" : "init(metrics:timeUnits:warmupIterations:scalingFactor:maxDuration:maxIterations:skip:thresholds:)"
+    "title" : "init(_:)"
   },
   {
     "headings" : [
@@ -1645,13 +1397,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/polarity-swift.property"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/scaledIterations"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Indicates whether larger or smaller measurements, relative to a set baseline, indicate better performance. ",
-    "summary" : "Indicates whether larger or smaller measurements, relative to a set baseline, indicate better performance.",
-    "title" : "polarity"
+    "rawIndexableTextContent" : "Convenience range to iterate over for benchmarks ",
+    "summary" : "Convenience range to iterate over for benchmarks",
+    "title" : "scaledIterations"
   },
   {
     "headings" : [
@@ -1661,61 +1413,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/peakMemoryVirtual"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/init(from:)"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Measure virtual memory usage - sampled during runtime ",
-    "summary" : "Measure virtual memory usage - sampled during runtime",
-    "title" : "BenchmarkMetric.peakMemoryVirtual"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Defines a benchmark ",
-    "summary" : "Defines a benchmark",
-    "title" : "Benchmark"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/init(rawValue:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from RawRepresentable.init(rawValue:). ",
-    "summary" : "Inherited from RawRepresentable.init(rawValue:).",
-    "title" : "init(rawValue:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/useScalingFactor"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "True if this metric should be scaled to the scalingFactor if looking at scaled output. ",
-    "summary" : "True if this metric should be scaled to the scalingFactor if looking at scaled output.",
-    "title" : "useScalingFactor"
+    "rawIndexableTextContent" : "Inherited from Decodable.init(from:). ",
+    "summary" : "Inherited from Decodable.init(from:).",
+    "title" : "init(from:)"
   },
   {
     "headings" : [
@@ -1759,12 +1463,340 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/peta"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/mega"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Scaling factor of 1e06. ",
+    "summary" : "Scaling factor of 1e06.",
+    "title" : "BenchmarkScalingFactor.mega"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuTotal"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "CPU total time spent for running the test (system + user) ",
+    "summary" : "CPU total time spent for running the test (system + user)",
+    "title" : "BenchmarkMetric.cpuTotal"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/blackHole(_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A function to foil compiler optimizations that would otherwise optimize out code you want to benchmark.  Discussion The function wraps another object or function, does nothing, and returns. If you want to benchmark the time is takes to create an instance and you don’t maintain a reference to it, the compiler may optimize it out entirely, thinking it is unused. To prevent the compiler from removing the code you want to measure, wrap the creation of the instance with blackHole. For example, the following code benchmarks the time it takes to create an instance of Date, and wraps the creation of the instance to prevent the compiler from optimizing it away: ",
+    "summary" : "A function to foil compiler optimizations that would otherwise optimize out code you want to benchmark.",
+    "title" : "blackHole(_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/timeUnits"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Override the automatic detection of timeunits for metrics related to time to a specific one (auto should work for most use cases) ",
+    "summary" : "Override the automatic detection of timeunits for metrics related to time to a specific one (auto should work for most use cases)",
+    "title" : "timeUnits"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/maxDuration"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The maximum wall clock runtime for the benchmark, currenty defaults to .seconds(1) if not set ",
+    "summary" : "The maximum wall clock runtime for the benchmark, currenty defaults to .seconds(1) if not set",
+    "title" : "maxDuration"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/contextSwitches"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Measure number of context switches made during the test ",
+    "summary" : "Measure number of context switches made during the test",
+    "title" : "BenchmarkMetric.contextSwitches"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/CustomStringConvertible-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "CustomStringConvertible Implementations"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/warmupIterations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Specifies a number of warmup iterations should be performed before the measurement to reduce outliers due to e.g. cache population ",
+    "summary" : "Specifies a number of warmup iterations should be performed before the measurement to reduce outliers due to e.g. cache population",
+    "title" : "warmupIterations"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/description"
       },
       "type" : "topLevelPage"
     },
     "rawIndexableTextContent" : " ",
     "summary" : "",
+    "title" : "description"
+  },
+  {
+    "headings" : [
+      "Overview"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The scaling factor for benchmark iterations.  Overview Typically used for very fast-running benchmarks. In those cases, the time to measure the benchmark can impact as much as the time to run the code being benchmarked. Use a scaling factor when running your short benchmarks to provide greater numerical stability to the results.",
+    "summary" : "The scaling factor for benchmark iterations.",
+    "title" : "BenchmarkScalingFactor"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/init(from:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from RawRepresentable.init(from:). ",
+    "summary" : "Inherited from RawRepresentable.init(from:).",
+    "title" : "init(from:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/all"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A collection of all benchmarks supported by this library. ",
+    "summary" : "A collection of all benchmarks supported by this library.",
+    "title" : "all"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/custom(_:polarity:useScalingFactor:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Custom metric ",
+    "summary" : "Custom metric",
+    "title" : "BenchmarkMetric.custom(_:polarity:useScalingFactor:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/cpuUser"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "CPU user space time spent for running the test ",
+    "summary" : "CPU user space time spent for running the test",
+    "title" : "BenchmarkMetric.cpuUser"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/readBytesPhysical"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The number of bytes physically read from a block device (i.e. disk) – Linux only ",
+    "summary" : "The number of bytes physically read from a block device (i.e. disk) – Linux only",
+    "title" : "BenchmarkMetric.readBytesPhysical"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/readBytesLogical"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The number of bytes read from storage (but may be satisfied by pagecache!) – Linux only ",
+    "summary" : "The number of bytes read from storage (but may be satisfied by pagecache!) – Linux only",
+    "title" : "BenchmarkMetric.readBytesLogical"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/init(_:configuration:closure:)-699lk"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Definition of a Benchmark  The name used for display purposes of the benchmark (also used for matching when comparing to baselines) Defines the settings that should be used for this benchmark The actual async benchmark closure that will be measured",
+    "summary" : "Definition of a Benchmark",
+    "title" : "init(_:configuration:closure:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/hash(into:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from RawRepresentable.hash(into:). ",
+    "summary" : "Inherited from RawRepresentable.hash(into:).",
+    "title" : "hash(into:)"
+  },
+  {
+    "headings" : [
+      "Overview",
+      "Installing Prerequisites and Platform Support",
+      "Installing `jemalloc` on macOS",
+      "Installing `jemalloc` on Ubuntu",
+      "Installing `jemalloc` on Amazon Linux 2",
+      "Adding dependencies",
+      "Add benchmark exectuable targets",
+      "Dedicated GitHub runner instances",
+      "Sample Project"
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/GettingStarted"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Before creating your own benchmarks, you must install the required prerequisites and add a dependency on Benchmark to your package. Overview There are three steps that needs to be performed to get up and running with your own benchmarks: Install prerequisite dependencies if needed (currently only jemalloc) Add a dependency on Benchmark to your Package.swift file Add one or more benchmark executable targets to the top level Benchmarks\/ directory for auto discovery After having done those, running your benchmarks are as simple as running swift package benchmark. Installing Prerequisites and Platform Support Benchmark requires Swift 5.7 support as it uses Regex and Duration types introduced with the macOS 13 runtime, most versions of Linux will work as long as Swift 5.7+ is used. Benchmark also depends and needs the jemalloc memory allocation library, which is used by the Benchmark infrastructure to capture memory allocation statistics, as jemalloc provides a rich programmatic API for extracting memory allocation statistics at runtime. The Benchmark package requires you to install jemalloc on any machine used for benchmarking. If you want to avoid adding the jemalloc dependency to your project, the recommended approach is to embed a separate Swift project in a subdirectory that uses your project, then the dependency on jemalloc is contained to that subproject only. Installing `jemalloc` on macOS  Installing `jemalloc` on Ubuntu  Installing `jemalloc` on Amazon Linux 2 For Amazon Linux 2 users have reported that the following works: Docker file configuration  make install installs the libraries in \/usr\/local\/lib, which the plugin can’t find, so you also have to do:  Alternatively:  Adding dependencies To add the dependency on Benchmark, add a dependency to your package:  Add benchmark exectuable targets Create an executable target in Package.swift for each benchmark suite you want to measure. The source for all benchmarks must reside in a directory named Benchmarks in the root of your swift package. The benchmark plugin uses this directory combined with the executable target information to automatically discover and run your benchmarks. For each executable target, include a dependency on BenchmarkSupport from package-benchmark. The following example shows an benchmark suite named My-Benchmark with the required dependency on BenchmarkSupport and the source files for the benchmark that reside in the directory Benchmarks\/My-Benchmark:  Dedicated GitHub runner instances For reproducible and good comparable results, it is highly recommended to set up a private GitHub runner that is completely dedicated for performance benchmark runs, as the standard GitHub CI runners are deployed on a shared infrastructure the deviations between runs can be significant and difficult to assess. Sample Project There’s a sample project showing usage of the basic API which can be a good starting point if you want to look at how a project can be setup.",
+    "summary" : "Before creating your own benchmarks, you must install the required prerequisites and add a dependency on Benchmark to your package.",
+    "title" : "Getting Started"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/polarity-swift.property"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Indicates whether larger or smaller measurements, relative to a set baseline, indicate better performance. ",
+    "summary" : "Indicates whether larger or smaller measurements, relative to a set baseline, indicate better performance.",
+    "title" : "polarity"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/peta"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Scaling factor of 1e15. ",
+    "summary" : "Scaling factor of 1e15.",
     "title" : "BenchmarkScalingFactor.peta"
   },
   {
@@ -1775,13 +1807,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/memoryLeaked"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/throughput"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Number of small+large mallocs - small+large frees in resident memory ",
-    "summary" : "Number of small+large mallocs - small+large frees in resident memory",
-    "title" : "BenchmarkMetric.memoryLeaked"
+    "rawIndexableTextContent" : "Operations \/ second, .prefersLarger ",
+    "summary" : "Operations \/ second, .prefersLarger",
+    "title" : "BenchmarkMetric.throughput"
   },
   {
     "headings" : [
@@ -1791,13 +1823,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/init(from:)"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/kilo"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Inherited from Decodable.init(from:). ",
-    "summary" : "Inherited from Decodable.init(from:).",
-    "title" : "init(from:)"
+    "rawIndexableTextContent" : "Scaling factor of 1e03. ",
+    "summary" : "Scaling factor of 1e03.",
+    "title" : "BenchmarkScalingFactor.kilo"
   },
   {
     "headings" : [
@@ -1823,44 +1855,12 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/customMetricMeasurement"
+        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct\/skip"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "customMetricMeasurement"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits\/automatic"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "BenchmarkTimeUnits.automatic"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric\/throughput"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Operations \/ second, .prefersLarger ",
-    "summary" : "Operations \/ second, .prefersLarger",
-    "title" : "BenchmarkMetric.throughput"
+    "rawIndexableTextContent" : "Whether to skip this test (convenience for not having to comment out tests that have issues) ",
+    "summary" : "Whether to skip this test (convenience for not having to comment out tests that have issues)",
+    "title" : "skip"
   }
 ]

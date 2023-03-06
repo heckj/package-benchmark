@@ -1,4 +1,10 @@
 {
+  "abstract" : [
+    {
+      "text" : "The scaling factor for benchmark iterations.",
+      "type" : "text"
+    }
+  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -40,7 +46,7 @@
     ],
     "remoteSource" : {
       "fileName" : "BenchmarkResult.swift",
-      "url" : "https:\/\/github.com\/ordo-one\/package-benchmark\/blob\/main\/Sources\/Benchmark\/BenchmarkResult.swift#L55"
+      "url" : "https:\/\/github.com\/ordo-one\/package-benchmark\/blob\/main\/Sources\/Benchmark\/BenchmarkResult.swift#L60"
     },
     "role" : "symbol",
     "roleHeading" : "Enumeration",
@@ -74,6 +80,42 @@
         }
       ],
       "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Typically used for very fast-running benchmarks.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "In those cases, the time to measure the benchmark can impact as much as the time to run the code being benchmarked.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Use a scaling factor when running your short benchmarks to provide greater numerical stability to the results.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
     }
   ],
   "relationshipsSections" : [
@@ -98,30 +140,36 @@
   "sections" : [
 
   ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits"
+      ],
+      "title" : "Configuring Benchmarks"
+    }
+  ],
   "topicSections" : [
     {
       "identifiers" : [
-        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/giga",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/one",
         "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/kilo",
         "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/mega",
-        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/one",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/giga",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/tera",
         "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/peta",
-        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/tera"
-      ],
-      "title" : "Enumeration Cases"
-    },
-    {
-      "identifiers" : [
         "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/init(_:)",
         "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/init(rawValue:)"
       ],
-      "title" : "Initializers"
+      "title" : "Selecting Scaling Factors"
     },
     {
       "identifiers" : [
         "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/description"
       ],
-      "title" : "Instance Properties"
+      "title" : "Describing the Scaling Factor"
     },
     {
       "generated" : true,
@@ -185,9 +233,80 @@
   "type" : "topic",
   "url" : "\/documentation\/benchmark"
 },
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/Benchmark/Configuration-swift.struct": {
+  "abstract" : [
+    {
+      "text" : "The configuration settings for running a benchmark.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Configuration"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Configuration"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Benchmark.Configuration",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmark\/configuration-swift.struct"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkMetric": {
+  "abstract" : [
+    {
+      "text" : "Metrics supported by benchmark.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkMetric"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkMetric"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BenchmarkMetric",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkmetric"
+},
 "doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor": {
   "abstract" : [
-
+    {
+      "text" : "The scaling factor for benchmark iterations.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -274,7 +393,10 @@
 },
 "doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor/giga": {
   "abstract" : [
-
+    {
+      "text" : "Scaling factor of 1e09.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -367,7 +489,10 @@
 },
 "doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor/kilo": {
   "abstract" : [
-
+    {
+      "text" : "Scaling factor of 1e03.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -392,7 +517,10 @@
 },
 "doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor/mega": {
   "abstract" : [
-
+    {
+      "text" : "Scaling factor of 1e06.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -417,7 +545,10 @@
 },
 "doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor/one": {
   "abstract" : [
-
+    {
+      "text" : "No scaling factor, the raw count of iterations.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -442,7 +573,10 @@
 },
 "doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor/peta": {
   "abstract" : [
-
+    {
+      "text" : "Scaling factor of 1e15.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -467,7 +601,10 @@
 },
 "doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor/tera": {
   "abstract" : [
-
+    {
+      "text" : "Scaling factor of 1e12.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -489,6 +626,40 @@
   "title" : "BenchmarkScalingFactor.tera",
   "type" : "topic",
   "url" : "\/documentation\/benchmark\/benchmarkscalingfactor\/tera"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkTimeUnits": {
+  "abstract" : [
+    {
+      "text" : "Time units for cpu\/wall clock time",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkTimeUnits"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkTimeUnits"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BenchmarkTimeUnits",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarktimeunits"
 }
 }
 }

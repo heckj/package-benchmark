@@ -1,4 +1,10 @@
 {
+  "abstract" : [
+    {
+      "text" : "Scaling factor of 1e12.",
+      "type" : "text"
+    }
+  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -35,7 +41,7 @@
     ],
     "remoteSource" : {
       "fileName" : "BenchmarkResult.swift",
-      "url" : "https:\/\/github.com\/ordo-one\/package-benchmark\/blob\/main\/Sources\/Benchmark\/BenchmarkResult.swift#L60"
+      "url" : "https:\/\/github.com\/ordo-one\/package-benchmark\/blob\/main\/Sources\/Benchmark\/BenchmarkResult.swift#L70"
     },
     "role" : "symbol",
     "roleHeading" : "Case",
@@ -79,6 +85,21 @@
   "sections" : [
 
   ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/one",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/kilo",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/mega",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/giga",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/peta",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/init(_:)",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/init(rawValue:)"
+      ],
+      "title" : "Selecting Scaling Factors"
+    }
+  ],
   "variants" : [
     {
       "paths" : [
@@ -109,7 +130,10 @@
 },
 "doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor": {
   "abstract" : [
-
+    {
+      "text" : "The scaling factor for benchmark iterations.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -138,9 +162,220 @@
   "type" : "topic",
   "url" : "\/documentation\/benchmark\/benchmarkscalingfactor"
 },
-"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor/tera": {
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor/giga": {
+  "abstract" : [
+    {
+      "text" : "Scaling factor of 1e09.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "giga"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/giga",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkScalingFactor.giga",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkscalingfactor\/giga"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor/init(_:)": {
   "abstract" : [
 
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9Benchmark0A9TimeUnitsO",
+      "text" : "BenchmarkTimeUnits"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/init(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkscalingfactor\/init(_:)"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor/init(rawValue:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "?("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "rawValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/init(rawValue:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(rawValue:)",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkscalingfactor\/init(rawvalue:)"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor/kilo": {
+  "abstract" : [
+    {
+      "text" : "Scaling factor of 1e03.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "kilo"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/kilo",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkScalingFactor.kilo",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkscalingfactor\/kilo"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor/mega": {
+  "abstract" : [
+    {
+      "text" : "Scaling factor of 1e06.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "mega"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/mega",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkScalingFactor.mega",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkscalingfactor\/mega"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor/one": {
+  "abstract" : [
+    {
+      "text" : "No scaling factor, the raw count of iterations.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "one"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/one",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkScalingFactor.one",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkscalingfactor\/one"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor/peta": {
+  "abstract" : [
+    {
+      "text" : "Scaling factor of 1e15.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "peta"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor\/peta",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BenchmarkScalingFactor.peta",
+  "type" : "topic",
+  "url" : "\/documentation\/benchmark\/benchmarkscalingfactor\/peta"
+},
+"doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor/tera": {
+  "abstract" : [
+    {
+      "text" : "Scaling factor of 1e12.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

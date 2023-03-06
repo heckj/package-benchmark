@@ -83,7 +83,10 @@
 },
 "doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor": {
   "abstract" : [
-
+    {
+      "text" : "The scaling factor for benchmark iterations.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

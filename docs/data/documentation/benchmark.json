@@ -319,7 +319,8 @@
       "identifiers" : [
         "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/Benchmark\/Configuration-swift.struct",
         "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkMetric",
-        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits"
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkTimeUnits",
+        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor"
       ],
       "title" : "Configuring Benchmarks"
     },
@@ -334,12 +335,6 @@
         "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/blackHole(_:)"
       ],
       "title" : "Supporting Functions"
-    },
-    {
-      "identifiers" : [
-        "doc:\/\/com.github.ordo-one.package-benchmark\/documentation\/Benchmark\/BenchmarkScalingFactor"
-      ],
-      "title" : "Enumerations"
     }
   ],
   "variants" : [
@@ -474,7 +469,10 @@
 },
 "doc://com.github.ordo-one.package-benchmark/documentation/Benchmark/BenchmarkScalingFactor": {
   "abstract" : [
-
+    {
+      "text" : "The scaling factor for benchmark iterations.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

@@ -770,36 +770,14 @@
             "type" : "enum"
           },
           {
-            "title" : "Registering Benchmarks",
-            "type" : "groupMarker"
-          },
-          {
-            "path" : "\/documentation\/benchmark\/registerbenchmarks()",
-            "title" : "func registerBenchmarks()",
-            "type" : "func"
-          },
-          {
-            "title" : "Supporting Functions",
-            "type" : "groupMarker"
-          },
-          {
-            "path" : "\/documentation\/benchmark\/blackhole(_:)",
-            "title" : "func blackHole(some Any)",
-            "type" : "func"
-          },
-          {
-            "title" : "Enumerations",
-            "type" : "groupMarker"
-          },
-          {
             "children" : [
               {
-                "title" : "Enumeration Cases",
+                "title" : "Selecting Scaling Factors",
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/giga",
-                "title" : "case giga",
+                "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/one",
+                "title" : "case one",
                 "type" : "case"
               },
               {
@@ -813,13 +791,8 @@
                 "type" : "case"
               },
               {
-                "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/one",
-                "title" : "case one",
-                "type" : "case"
-              },
-              {
-                "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/peta",
-                "title" : "case peta",
+                "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/giga",
+                "title" : "case giga",
                 "type" : "case"
               },
               {
@@ -828,8 +801,9 @@
                 "type" : "case"
               },
               {
-                "title" : "Initializers",
-                "type" : "groupMarker"
+                "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/peta",
+                "title" : "case peta",
+                "type" : "case"
               },
               {
                 "path" : "\/documentation\/benchmark\/benchmarkscalingfactor\/init(_:)",
@@ -842,7 +816,7 @@
                 "type" : "init"
               },
               {
-                "title" : "Instance Properties",
+                "title" : "Describing the Scaling Factor",
                 "type" : "groupMarker"
               },
               {
@@ -913,6 +887,24 @@
             "path" : "\/documentation\/benchmark\/benchmarkscalingfactor",
             "title" : "BenchmarkScalingFactor",
             "type" : "enum"
+          },
+          {
+            "title" : "Registering Benchmarks",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/benchmark\/registerbenchmarks()",
+            "title" : "func registerBenchmarks()",
+            "type" : "func"
+          },
+          {
+            "title" : "Supporting Functions",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/benchmark\/blackhole(_:)",
+            "title" : "func blackHole(some Any)",
+            "type" : "func"
           }
         ],
         "path" : "\/documentation\/benchmark",
